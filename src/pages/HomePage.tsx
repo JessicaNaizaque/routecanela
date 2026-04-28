@@ -1,0 +1,190 @@
+import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { events as eventList } from '../data/events';
+import { news as newsList } from '../data/news';
+import { routes as routeList } from '../data/routes';
+import { useLanguage } from '../context/LanguageContext';
+import { t } from '../translations';
+import { AnimatedHeading } from '../components/AnimatedHeading';
+import { EventCard } from '../components/EventCard';
+import { FadeIn } from '../components/FadeIn';
+import { InViewFade } from '../components/InViewFade';
+import { NewsCard } from '../components/NewsCard';
+import { RouteCard } from '../components/RouteCard';
+import { SectionHeader } from '../components/SectionHeader';
+import { TestimonialsSection } from '../components/TestimonialsSection';
+
+const VIDEO_URL = 'https://www.routecanela.de/assets/img/video_header.mp4';
+
+export function HomePage() {
+  useEffect(() => {
+    document.title = 'RouteCanela';
+  }, []);
+
+  const { lang } = useLanguage();
+  const copy = t[lang];
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    void video.play().catch(() => {});
+  }, []);
+
+  const previewRoutes = routeList.slice(0, 6);
+  const previewEvents = eventList.slice(0, 6);
+  const previewNews = newsList.slice(0, 3);
+
+  return (
+    <>
+      <section className="relative min-h-screen overflow-hidden bg-[#0a0a0a]">
+        <video
+          ref={videoRef}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+            videoReady ? 'opacity-100' : 'opacity-0'
+          }`}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+          onCanPlay={() => setVideoReady(true)}
+        >
+          <source src={VIDEO_URL} type="video/mp4" />
+        </video>
+
+        <div className="absolute inset-0 flex flex-col">
+          <div className="flex flex-1 flex-col justify-end px-6 pb-12 lg:grid lg:grid-cols-2 lg:items-end lg:pb-16 lg:px-12 xl:px-16">
+            <div>
+              <AnimatedHeading
+                text={copy.hero_heading}
+                className="mb-4 text-4xl font-normal tracking-[-0.04em] md:text-5xl lg:text-6xl xl:text-7xl"
+              />
+              <FadeIn delay={800} duration={1000}>
+                <p className="mb-5 text-base text-gray-300 md:text-lg">{copy.hero_sub}</p>
+              </FadeIn>
+              <FadeIn delay={1200} duration={1000}>
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    to="/routes"
+                    className="btn-gold px-8 py-3 text-base ring-offset-black"
+                  >
+                    {copy.hero_cta_primary}
+                  </Link>
+                  <Link
+                    to="/routes"
+                    className="btn-gold px-8 py-3 text-base ring-offset-black"
+                  >
+                    {copy.hero_cta_secondary}
+                  </Link>
+                </div>
+              </FadeIn>
+            </div>
+            <FadeIn delay={1400} duration={1000}>
+              <div className="mt-10 flex h-full items-end justify-start lg:mt-0 lg:justify-end">
+                <div className="rounded-xl border-2 border-[#D4A853]/90 bg-white/85 px-6 py-3 shadow-lg backdrop-blur-sm">
+                  <p className="text-lg font-light text-stone-800 md:text-xl lg:text-2xl">
+                    {copy.exploring_tagline}
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="routes-preview"
+        className="py-24 px-6 md:px-12 lg:px-16"
+      >
+        <div className="mx-auto max-w-7xl">
+          <SectionHeader
+            title={copy.routes_title}
+            subtitle={copy.routes_subtitle}
+            align="left"
+          />
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {previewRoutes.map((route, index) => (
+              <InViewFade key={route.id} index={index}>
+                <Link to={`/routes/${route.id}`} className="block cursor-pointer">
+                  <RouteCard
+                    name={route.name}
+                    image={route.image}
+                    duration={route.duration}
+                    distance={route.distance}
+                    tags={[route.name]}
+                    loading={index === 0 ? 'eager' : 'lazy'}
+                  />
+                </Link>
+              </InViewFade>
+            ))}
+          </div>
+          <div className="mt-12 flex justify-center">
+            <Link to="/routes" className="btn-gold px-8 py-3 text-base ring-offset-[#fafaf9]">
+              {copy.see_all_routes}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-amber-50/40 py-24 px-6 md:px-12 lg:px-16">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeader
+            title={copy.events_title}
+            subtitle={copy.events_subtitle}
+            align="left"
+          />
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {previewEvents.map((ev, index) => (
+              <InViewFade key={ev.id} index={index}>
+                <EventCard
+                  title={ev.title}
+                  image={ev.image}
+                  category={ev.category}
+                  slug={ev.slug}
+                />
+              </InViewFade>
+            ))}
+          </div>
+          <div className="mt-12 flex justify-center">
+            <Link to="/events" className="btn-gold px-8 py-3 text-base ring-offset-[#fafaf9]">
+              {copy.see_all_events}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6 md:px-12 lg:px-16">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeader
+            title={copy.news_title}
+            subtitle={copy.news_subtitle}
+            align="left"
+          />
+          <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
+            {previewNews.map((article, index) => (
+              <InViewFade key={article.id} index={index}>
+                <NewsCard
+                  title={article.title}
+                  image={article.image}
+                  excerpt={article.excerpt}
+                  slug={article.slug}
+                  loading={index === 0 ? 'eager' : 'lazy'}
+                />
+              </InViewFade>
+            ))}
+          </div>
+          <div className="mt-12 flex justify-center">
+            <Link to="/news" className="btn-gold px-8 py-3 text-base ring-offset-[#fafaf9]">
+              {copy.see_all_news}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <TestimonialsSection />
+    </>
+  );
+}
