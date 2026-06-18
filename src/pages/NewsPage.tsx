@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { news as newsList } from '../data/news';
+import { getNews } from '../data/news';
 import { useLanguage } from '../context/LanguageContext';
 import { t } from '../translations';
 import { AnimatedHeading } from '../components/AnimatedHeading';
@@ -14,6 +14,7 @@ export function NewsPage() {
 
   const { lang } = useLanguage();
   const copy = t[lang];
+  const newsList = useMemo(() => getNews(lang), [lang]);
   const [featured, ...rest] = newsList;
 
   return (

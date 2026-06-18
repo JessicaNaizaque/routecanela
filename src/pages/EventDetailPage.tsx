@@ -1,7 +1,7 @@
-import { CalendarClock, Clock, MapPin, Ticket } from 'lucide-react';
+import { CalendarClock, Clock, MapPin, Users } from 'lucide-react';
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { events as eventList } from '../data/events';
+import { getEvent, getEvents } from '../data/events';
 import { useLanguage } from '../context/LanguageContext';
 import { t } from '../translations';
 import { EventCard } from '../components/EventCard';
@@ -16,7 +16,7 @@ export function EventDetailPage() {
     document.title = 'RouteCanela';
   }, []);
 
-  const event = eventList.find((e) => e.slug === id);
+  const event = id ? getEvent(id, lang) : undefined;
 
   if (!event) {
     return (
@@ -32,14 +32,28 @@ export function EventDetailPage() {
     );
   }
 
-  const related = eventList.filter((e) => e.slug !== event.slug).slice(0, 3);
+  const related = getEvents(lang)
+    .filter((e) => e.slug !== event.slug)
+    .slice(0, 3);
 
   const facts = [
     { icon: CalendarClock, text: event.date, label: copy.detail_date },
     { icon: MapPin, text: event.location, label: copy.detail_location },
     { icon: Clock, text: event.duration, label: copy.detail_duration },
-    { icon: Ticket, text: event.price, label: copy.detail_price },
+    { icon: Users, text: event.recommendAudience, label: copy.detail_recommend_audience },
   ];
+
+  function renderRich(text: string) {
+    return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+      part.startsWith('**') && part.endsWith('**') ? (
+        <strong key={i} className="font-semibold text-stone-900">
+          {part.slice(2, -2)}
+        </strong>
+      ) : (
+        part
+      )
+    );
+  }
 
   return (
     <>
@@ -84,7 +98,15 @@ export function EventDetailPage() {
         </FadeIn>
 
         <FadeIn delay={300}>
-          <p className="mb-12 text-base leading-relaxed text-stone-700">{event.description}</p>
+          <div className="mb-12 space-y-4 text-base leading-relaxed text-stone-700">
+            {event.description
+              .split('\n')
+              .map((paragraph) => paragraph.trim())
+              .filter(Boolean)
+              .map((paragraph, i) => (
+                <p key={i}>{renderRich(paragraph)}</p>
+              ))}
+          </div>
         </FadeIn>
 
         <FadeIn delay={400}>

@@ -1,7 +1,7 @@
 import { ArrowLeft, Menu, Search, X } from 'lucide-react';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { NavLink, useMatch, useNavigate } from 'react-router-dom';
-import { events as eventData } from '../data/events';
+import { getEvents } from '../data/events';
 import { routes as routeData } from '../data/routes';
 import { useLanguage } from '../context/LanguageContext';
 import { t } from '../translations';
@@ -49,6 +49,7 @@ function NavItem({
 export function Navbar() {
   const { lang } = useLanguage();
   const copy = t[lang];
+  const eventData = useMemo(() => getEvents(lang), [lang]);
   const navigate = useNavigate();
   const [searchOpen, setSearchOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);

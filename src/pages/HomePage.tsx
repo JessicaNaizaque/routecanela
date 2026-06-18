@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { events as eventList } from '../data/events';
-import { news as newsList } from '../data/news';
+import { getEvents } from '../data/events';
+import { getNews } from '../data/news';
 import { routes as routeList } from '../data/routes';
 import { useLanguage } from '../context/LanguageContext';
 import { t } from '../translations';
@@ -13,8 +13,9 @@ import { NewsCard } from '../components/NewsCard';
 import { RouteCard } from '../components/RouteCard';
 import { SectionHeader } from '../components/SectionHeader';
 import { TestimonialsSection } from '../components/TestimonialsSection';
+import videoHeader from '../assets/videos/routecanela-video-web.mp4';
 
-const VIDEO_URL = 'https://www.routecanela.de/assets/img/video_header.mp4';
+//const VIDEO_URL = 'https://www.routecanela.de/assets/img/video_header.mp4';
 
 export function HomePage() {
   useEffect(() => {
@@ -33,8 +34,8 @@ export function HomePage() {
   }, []);
 
   const previewRoutes = routeList.slice(0, 6);
-  const previewEvents = eventList.slice(0, 6);
-  const previewNews = newsList.slice(0, 3);
+  const previewEvents = useMemo(() => getEvents(lang).slice(0, 6), [lang]);
+  const previewNews = useMemo(() => getNews(lang).slice(0, 3), [lang]);
 
   return (
     <>
@@ -52,7 +53,7 @@ export function HomePage() {
           poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
           onCanPlay={() => setVideoReady(true)}
         >
-          <source src={VIDEO_URL} type="video/mp4" />
+          <source src={videoHeader} type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 flex flex-col">

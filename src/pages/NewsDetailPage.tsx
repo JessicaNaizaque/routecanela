@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { news as newsList } from '../data/news';
+import { getNews, getNewsItem } from '../data/news';
 import { useLanguage } from '../context/LanguageContext';
 import { t } from '../translations';
 import { FadeIn } from '../components/FadeIn';
@@ -22,7 +22,7 @@ export function NewsDetailPage() {
     document.title = 'RouteCanela';
   }, []);
 
-  const article = newsList.find((n) => n.slug === id);
+  const article = id ? getNewsItem(id, lang) : undefined;
 
   if (!article) {
     return (
@@ -38,7 +38,9 @@ export function NewsDetailPage() {
     );
   }
 
-  const related = newsList.filter((n) => n.slug !== article.slug).slice(0, 3);
+  const related = getNews(lang)
+    .filter((n) => n.slug !== article.slug)
+    .slice(0, 3);
 
   const paragraphs = article.body.split('\n\n').filter(Boolean);
 
