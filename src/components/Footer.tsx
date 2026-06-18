@@ -5,15 +5,6 @@ import { t } from '../translations';
 
 const logoUrl = 'https://www.routecanela.de/assets/img/logo.png';
 
-/** X / Twitter-style icon */
-function XIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-    </svg>
-  );
-}
-
 export function Footer() {
   const { lang } = useLanguage();
   const copy = t[lang];
@@ -43,15 +34,6 @@ export function Footer() {
             >
               <Facebook className="h-4 w-4" />
             </a>
-            {/* <a
-              href="https://x.com"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg border border-stone-600 p-2 text-stone-400 transition-all duration-200 hover:border-amber-400/60 hover:bg-stone-800 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40"
-              aria-label="X"
-            >
-              <XIcon className="h-4 w-4" />
-            </a> */}
             <a
               href="https://www.youtube.com/@Routecanela"
               target="_blank"
