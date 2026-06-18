@@ -1,4 +1,4 @@
-import { Facebook, Instagram, MapPin } from 'lucide-react';
+import { Facebook, Instagram, MapPin, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { t } from '../translations';
@@ -26,7 +26,7 @@ export function Footer() {
           <p className="text-sm text-stone-400">{copy.footer_tagline}</p>
           <div className="mt-6 flex gap-3">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/route_canela?igsh=N2Qyemtia25peGgy"
               target="_blank"
               rel="noreferrer"
               className="rounded-lg border border-stone-600 p-2 text-stone-400 transition-all duration-200 hover:border-amber-400/60 hover:bg-stone-800 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40"
@@ -35,7 +35,7 @@ export function Footer() {
               <Instagram className="h-4 w-4" />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/routecanela?mibextid=LQQJ4d"
               target="_blank"
               rel="noreferrer"
               className="rounded-lg border border-stone-600 p-2 text-stone-400 transition-all duration-200 hover:border-amber-400/60 hover:bg-stone-800 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40"
@@ -43,7 +43,7 @@ export function Footer() {
             >
               <Facebook className="h-4 w-4" />
             </a>
-            <a
+            {/* <a
               href="https://x.com"
               target="_blank"
               rel="noreferrer"
@@ -51,6 +51,15 @@ export function Footer() {
               aria-label="X"
             >
               <XIcon className="h-4 w-4" />
+            </a> */}
+            <a
+              href="https://www.youtube.com/@Routecanela"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg border border-stone-600 p-2 text-stone-400 transition-all duration-200 hover:border-amber-400/60 hover:bg-stone-800 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40"
+              aria-label="Youtube"
+            >
+              <Youtube className="h-4 w-4" />
             </a>
           </div>
         </div>
