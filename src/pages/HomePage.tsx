@@ -96,6 +96,16 @@ export function HomePage() {
         </div>
       </section>
 
+      <section className="bg-amber-50/40 py-24 px-6 md:px-12 lg:px-16">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeader
+            title={copy.intro_title}
+            subtitle={copy.intro_subtitle}
+            align="left"
+          />
+        </div>
+      </section>
+
       <section
         id="routes-preview"
         className="py-24 px-6 md:px-12 lg:px-16"
