@@ -13,9 +13,8 @@ import { NewsCard } from '../components/NewsCard';
 import { RouteCard } from '../components/RouteCard';
 import { SectionHeader } from '../components/SectionHeader';
 import { TestimonialsSection } from '../components/TestimonialsSection';
-import videoHeader from '../assets/videos/routecanela-video-web.mp4';
 
-//const VIDEO_URL = 'https://www.routecanela.de/assets/img/video_header.mp4';
+const VIDEO_URL = 'https://www.routecanela.de/assets/videos/routecanela-video-web.mp4';
 
 export function HomePage() {
   useEffect(() => {
@@ -53,7 +52,7 @@ export function HomePage() {
           poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
           onCanPlay={() => setVideoReady(true)}
         >
-          <source src={videoHeader} type="video/mp4" />
+          <source src={VIDEO_URL} type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 flex flex-col">
