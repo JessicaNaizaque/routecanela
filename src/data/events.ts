@@ -36,7 +36,7 @@ const eventSources: EventSource[] = [
   {
     id: 1,
     slug: 'carnival-cultures',
-    image: 'https://www.routecanela.de/assets/images/events/images/Carnavalkultere_routecanela.png',
+    image: 'https://www.routecanela.de/assets/images/events/Carnavalkultere_routecanela.png',
     location: 'Kreuzberg / Friedrichshain',
     categoryKey: 'Culture',
     title: { DE: 'Karneval der Kulturen', EN: 'Carnival of Cultures', ES: 'Carnival of Cultures' },
