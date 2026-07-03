@@ -1,0 +1,28 @@
+# Upload this file as ".htaccess" inside your /assets folder on the server
+# (i.e. it will live at https://www.routecanela.de/assets/.htaccess).
+
+# --- Correct MIME types (in case the host doesn't set them) ---
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType video/webm .webm
+  AddType video/mp4  .mp4
+</IfModule>
+
+# --- Long-lived caching for static media ---
+<IfModule mod_headers.c>
+  <FilesMatch "\.(mp4|webm|jpg|jpeg|png|webp|gif|svg|ico|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  # Progressive download / seeking for video
+  Header set Accept-Ranges bytes
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType video/mp4     "access plus 1 year"
+  ExpiresByType video/webm    "access plus 1 year"
+  ExpiresByType image/webp    "access plus 1 year"
+  ExpiresByType image/jpeg    "access plus 1 year"
+  ExpiresByType image/png     "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
