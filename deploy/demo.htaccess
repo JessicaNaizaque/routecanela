@@ -7,6 +7,14 @@
 # --- SPA client-side routing fallback ---
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # Force HTTPS (root rules no longer reach /demo once we define our own)
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-SSL} !on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+  # Force www
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+  # SPA fallback for the /demo app
   RewriteBase /demo/
   # Serve existing files and directories as-is
   RewriteCond %{REQUEST_FILENAME} -f [OR]
