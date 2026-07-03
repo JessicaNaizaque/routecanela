@@ -36,7 +36,7 @@ const eventSources: EventSource[] = [
   {
     id: 1,
     slug: 'carnival-cultures',
-    image: '/assets/images/events/Carnavalkultere_routecanela.png',
+    image: 'https://www.routecanela.de/assets/images/events/Carnavalkultere_routecanela.png',
     location: 'Kreuzberg / Friedrichshain',
     categoryKey: 'Culture',
     title: { DE: 'Karneval der Kulturen', EN: 'Carnival of Cultures', ES: 'Carnival of Cultures' },
@@ -81,7 +81,7 @@ const eventSources: EventSource[] = [
   {
     id: 2,
     slug: 'staatsoper',
-    image: '/assets/img/events/Eventos_Neukolln_Fahrrad_Route_Restaurant.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Neukolln_Fahrrad_Route_Restaurant.jpg',
     location: 'Mitte / Mitte',
     categoryKey: 'Music',
     title: { DE: 'Staatsoper für alle', EN: 'Staatsoper for All', ES: 'Staatsoper für alle' },
@@ -126,7 +126,7 @@ const eventSources: EventSource[] = [
   {
     id: 3,
     slug: 'womens-run',
-    image: '/assets/img/events/Eventos_Kreuzberg_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kreuzberg_Fahrrad_Route.jpg',
     location: 'Tiergarten',
     categoryKey: 'Sport',
     title: {
@@ -171,7 +171,7 @@ const eventSources: EventSource[] = [
   {
     id: 4,
     slug: 'design-week',
-    image: '/assets/images/events/Berlin_routecanela.png',
+    image: 'https://www.routecanela.de/assets/images/events/Berlin_routecanela.png',
     location: 'Mitte / Kreuzberg',
     categoryKey: 'Culture',
     title: {
@@ -221,7 +221,7 @@ const eventSources: EventSource[] = [
     id: 5,
     slug: 'mowe-festival',
     image:
-      '/assets/img/events/Eventos_Prenzlauer_Berg_Fahrrad_Route.jpg',
+      'https://www.routecanela.de/assets/img/events/Eventos_Prenzlauer_Berg_Fahrrad_Route.jpg',
     location: 'Moabit / Wedding',
     categoryKey: 'Art',
     title: { DE: 'Mowe Festival for Art and Urban Culture', EN: 'Mowe Festival for Art and Urban Culture', ES: 'Mowe Festival for Art and Urban Culture' },
@@ -262,7 +262,7 @@ const eventSources: EventSource[] = [
   {
     id: 6,
     slug: 'chili-fest',
-    image: '/assets/img/events/Eventos_Mitte_Berlin_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Mitte_Berlin_Fahrrad_Route.jpg',
     location: 'Varies',
     categoryKey: 'Food',
     title: { DE: 'Berlin Chili Fest', EN: 'Berlin Chili Fest', ES: 'Berlin Chili Fest' },
@@ -311,7 +311,7 @@ const eventSources: EventSource[] = [
   {
     id: 7,
     slug: 'sciences-night',
-    image: '/assets/img/events/Eventos_Schoneberg_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Schoneberg_Fahrrad_Route.jpg',
     location: 'Berlin',
     categoryKey: 'Science',
     title: { DE: 'Lange Nacht der Wissenschaften', EN: 'Long Night of the Sciences', ES: 'Long Night of the Sciences' },
@@ -353,7 +353,7 @@ const eventSources: EventSource[] = [
     id: 8,
     slug: 'fete-musique',
     image:
-      '/assets/img/events/Eventos_Steglitz_Fahrrad_Route_Berlin.jpg',
+      'https://www.routecanela.de/assets/img/events/Eventos_Steglitz_Fahrrad_Route_Berlin.jpg',
     location: 'Berlin',
     categoryKey: 'Music',
     title: { DE: 'Fête de la Musique', EN: 'Fête de la Musique', ES: 'Fête de la Musique' },
@@ -394,7 +394,7 @@ const eventSources: EventSource[] = [
   {
     id: 9,
     slug: 'italian-food-festival',
-    image: '/assets/img/events/Eventos_Zehlendorf_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Zehlendorf_Fahrrad_Route.jpg',
     location: 'Berlin',
     categoryKey: 'Food',
     title: { DE: 'Italian Street Food Festival', EN: 'Italian Street Food Festival', ES: 'Italian Street Food Festival' },
@@ -436,7 +436,7 @@ const eventSources: EventSource[] = [
     id: 10,
     slug: 'street-food-teufelsberg',
     image:
-      '/assets/img/events/Eventos_Tempelhof_Berlin_Fahrrad_Route.jpg',
+      'https://www.routecanela.de/assets/img/events/Eventos_Tempelhof_Berlin_Fahrrad_Route.jpg',
     location: 'Berlin',
     categoryKey: 'Food',
     title: {
@@ -481,7 +481,7 @@ const eventSources: EventSource[] = [
   {
     id: 11,
     slug: 'fashion-week',
-    image: '/assets/img/events/Eventos_Mitte_Berlin_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Mitte_Berlin_Fahrrad_Route.jpg',
     location: 'Teufelsberg',
     categoryKey: 'Culture',
     title: {
@@ -526,7 +526,7 @@ const eventSources: EventSource[] = [
   {
     id: 12,
     slug: 'night-museums',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Mitte',
     categoryKey: 'Culture',
     title: {
@@ -567,7 +567,7 @@ const eventSources: EventSource[] = [
   {
     id: 13,
     slug: 'berlin-marathon',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Berlin',
     categoryKey: 'Sport',
     title: {
@@ -608,7 +608,7 @@ const eventSources: EventSource[] = [
   {
     id: 14,
     slug: 'art-fair',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Tempelhof',
     categoryKey: 'Art',
     title: {
@@ -649,7 +649,7 @@ const eventSources: EventSource[] = [
   {
     id: 15,
     slug: 'festival-lights',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Berlin-Mitte',
     categoryKey: 'Art',
     title: {
@@ -690,7 +690,7 @@ const eventSources: EventSource[] = [
   {
     id: 16,
     slug: 'food-week',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Berlin',
     categoryKey: 'Food',
     title: {
@@ -731,7 +731,7 @@ const eventSources: EventSource[] = [
   {
     id: 17,
     slug: 'christmas-breitscheidplatz',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Charlottenburg',
     categoryKey: 'Culture',
     title: {
@@ -772,7 +772,7 @@ const eventSources: EventSource[] = [
   {
     id: 18,
     slug: 'christmas-gendarmenmarkt',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Mitte',
     categoryKey: 'Culture',
     title: {
@@ -813,7 +813,7 @@ const eventSources: EventSource[] = [
   {
     id: 19,
     slug: 'medieval-christmas-market',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Friedrichshain',
     categoryKey: 'Culture',
     title: {
@@ -854,7 +854,7 @@ const eventSources: EventSource[] = [
   {
     id: 20,
     slug: 'berlinale',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Mitte / Potsdamer Platz',
     categoryKey: 'Cinema',
     title: {
@@ -895,7 +895,7 @@ const eventSources: EventSource[] = [
   {
     id: 21,
     slug: 'achtung',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Berlin',
     categoryKey: 'Cinema',
     title: {
@@ -936,7 +936,7 @@ const eventSources: EventSource[] = [
   {
     id: 22,
     slug: 'open-air-cinema',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Berlin',
     categoryKey: 'Cinema',
     title: {
@@ -977,7 +977,7 @@ const eventSources: EventSource[] = [
   {
     id: 23,
     slug: 'open-air-cinema',
-    image: '/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kopenick_Berlin_Fahrrad.jpg',
     location: 'Berlin',
     categoryKey: 'Cinema',
     title: {

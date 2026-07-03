@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { t } from '../translations';
 
-const logoUrl = '/assets/img/logo.png';
+const logoUrl = 'https://www.routecanela.de/assets/img/logo.png';
 
 export function Footer() {
   const { lang } = useLanguage();

@@ -32,7 +32,7 @@ const newsSources: NewsSource[] = [
   {
     id: 1,
     slug: 'bosque-encantado',
-    image: '/assets/img/news/Eventos_spandau_Berlin_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/news/Eventos_spandau_Berlin_Fahrrad_Route.jpg',
     author: 'Laura Méndez',
     title: { DE: 'Verwunschener Wald', EN: 'Enchanted Forest', ES: 'Bosque Encantado' },
     date: {
@@ -61,7 +61,7 @@ const newsSources: NewsSource[] = [
     id: 2,
     slug: 'cafe-sentidos',
     image:
-      '/assets/img/events/Eventos_Neukolln_Fahrrad_Route_Restaurant.jpg',
+      'https://www.routecanela.de/assets/img/events/Eventos_Neukolln_Fahrrad_Route_Restaurant.jpg',
     author: 'Tomás García',
     title: { DE: 'Café Sentidos', EN: 'Café Sentidos', ES: 'Café Sentidos' },
     date: {
@@ -89,7 +89,7 @@ const newsSources: NewsSource[] = [
   {
     id: 3,
     slug: 'jardin-secreto',
-    image: '/assets/img/events/Eventos_Kreuzberg_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Kreuzberg_Fahrrad_Route.jpg',
     author: 'Anna Schulz',
     title: { DE: 'Geheimer Garten', EN: 'Secret Garden', ES: 'Jardín Secreto' },
     date: {
@@ -118,7 +118,7 @@ const newsSources: NewsSource[] = [
     id: 4,
     slug: 'mercado-artesanal',
     image:
-      '/assets/img/events/Eventos_Steglitz_Fahrrad_Route_Berlin.jpg',
+      'https://www.routecanela.de/assets/img/events/Eventos_Steglitz_Fahrrad_Route_Berlin.jpg',
     author: 'Laura Méndez',
     title: { DE: 'Kunsthandwerksmarkt', EN: 'Artisan Market', ES: 'Mercado Artesanal' },
     date: {
@@ -147,7 +147,7 @@ const newsSources: NewsSource[] = [
     id: 5,
     slug: 'museo-historia-natural',
     image:
-      '/assets/img/events/Eventos_Tempelhof_Berlin_Fahrrad_Route.jpg',
+      'https://www.routecanela.de/assets/img/events/Eventos_Tempelhof_Berlin_Fahrrad_Route.jpg',
     author: 'Tomás García',
     title: {
       DE: 'Naturkundemuseum',
@@ -179,7 +179,7 @@ const newsSources: NewsSource[] = [
   {
     id: 6,
     slug: 'restaurante-ecologico',
-    image: '/assets/img/events/Eventos_Tiergarten_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Tiergarten_Fahrrad_Route.jpg',
     author: 'Anna Schulz',
     title: { DE: 'Öko-Restaurant', EN: 'Eco Restaurant', ES: 'Restaurante Ecológico' },
     date: {
@@ -207,7 +207,7 @@ const newsSources: NewsSource[] = [
   {
     id: 7,
     slug: 'centro-cultural',
-    image: '/assets/img/events/Eventos_Zehlendorf_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Zehlendorf_Fahrrad_Route.jpg',
     author: 'Laura Méndez',
     title: { DE: 'Kulturzentrum', EN: 'Cultural Centre', ES: 'Centro Cultural' },
     date: {
@@ -235,7 +235,7 @@ const newsSources: NewsSource[] = [
   {
     id: 8,
     slug: 'parque-acuatico',
-    image: '/assets/img/events/Eventos_Mitte_Berlin_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Eventos_Mitte_Berlin_Fahrrad_Route.jpg',
     author: 'Tomás García',
     title: { DE: 'Wasserpark', EN: 'Water Park', ES: 'Parque Acuático' },
     date: {
@@ -263,7 +263,7 @@ const newsSources: NewsSource[] = [
   {
     id: 9,
     slug: 'parque-aventuras-medieval',
-    image: '/assets/img/news/Eventos_spandau_Berlin_Fahrrad_Route.jpg',
+    image: 'https://www.routecanela.de/assets/img/news/Eventos_spandau_Berlin_Fahrrad_Route.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Mittelalterlicher Abenteuerpark',
