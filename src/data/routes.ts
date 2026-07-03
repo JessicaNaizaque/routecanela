@@ -13,7 +13,7 @@ export const routes: RouteItem[] = [
   {
     id: 'charlottenburg',
     name: 'Charlottenburg',
-    image: 'https://www.routecanela.de/assets/img/routes/Charlottenburg.webp',
+    image: '/assets/img/routes/Charlottenburg.webp',
     duration: '30 min',
     distance: '7 km',
     events: [
@@ -28,7 +28,7 @@ export const routes: RouteItem[] = [
   {
     id: 'schoneberg',
     name: 'Schöneberg',
-    image: 'https://www.routecanela.de/assets/img/routes/Schoneberg.webp',
+    image: '/assets/img/routes/Schoneberg.webp',
     duration: '1 hr 20 min',
     distance: '8.5 km',
     events: [
@@ -43,7 +43,7 @@ export const routes: RouteItem[] = [
   {
     id: 'kreuzberg',
     name: 'Kreuzberg',
-    image: 'https://www.routecanela.de/assets/img/routes/Kreuzberg.webp',
+    image: '/assets/img/routes/Kreuzberg.webp',
     duration: '1 hr 30 min',
     distance: '9 km',
     events: ['XJAZZ Festival', 'Festival of Lights', 'Bergmannstraßenfest', 'MyFest'],
@@ -53,7 +53,7 @@ export const routes: RouteItem[] = [
   {
     id: 'friedenau',
     name: 'Friedenau',
-    image: 'https://www.routecanela.de/assets/img/routes/Friedenau.webp',
+    image: '/assets/img/routes/Friedenau.webp',
     duration: '1 hr',
     distance: '6 km',
     events: [
@@ -66,7 +66,7 @@ export const routes: RouteItem[] = [
   {
     id: 'neukolln',
     name: 'Neukölln',
-    image: 'https://www.routecanela.de/assets/img/routes/Neukolln.webp',
+    image: '/assets/img/routes/Neukolln.webp',
     duration: '45 min',
     distance: '8 km',
     events: ['Neuköllner Maientage', 'Neukölln Arcaden Street Food Markt'],
@@ -76,7 +76,7 @@ export const routes: RouteItem[] = [
   {
     id: 'prenzlauerberg',
     name: 'Prenzlauerberg',
-    image: 'https://www.routecanela.de/assets/img/routes/Prenzlauerberg.webp',
+    image: '/assets/img/routes/Prenzlauerberg.webp',
     duration: 'TBD',
     distance: 'TBD',
     events: ['Sommerfest im Mauerpark', 'Jazz im Park'],
@@ -86,7 +86,7 @@ export const routes: RouteItem[] = [
   {
     id: 'berlin-mitte',
     name: 'Berlín Mitte',
-    image: 'https://www.routecanela.de/assets/img/routes/Berlin_Mitte.webp',
+    image: '/assets/img/routes/Berlin_Mitte.webp',
     duration: 'TBD',
     distance: 'TBD',
     events: [
@@ -107,7 +107,7 @@ export const routes: RouteItem[] = [
   {
     id: 'steglitz',
     name: 'Steglitz',
-    image: 'https://www.routecanela.de/assets/img/routes/Steglitz.webp',
+    image: '/assets/img/routes/Steglitz.webp',
     duration: '2 hrs',
     distance: '13 km',
     events: [

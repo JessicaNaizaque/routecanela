@@ -14,7 +14,36 @@ import { RouteCard } from '../components/RouteCard';
 import { SectionHeader } from '../components/SectionHeader';
 import { TestimonialsSection } from '../components/TestimonialsSection';
 
-const VIDEO_URL = 'https://www.routecanela.de/assets/videos/routecanela-video-web.mp4';
+const VIDEO_MP4 = '/assets/videos/routecanela-video-web.mp4';
+const VIDEO_WEBM = '/assets/videos/routecanela-video-web.mp4'; //TODO: change to webm
+const VIDEO_POSTER = '/assets/img/events/Eventos_Kreuzberg_Fahrrad_Route.jpg';
+
+/**
+ * Decide whether the decorative background video is worth loading.
+ * On slow/metered connections or when the user prefers reduced motion we
+ * keep the lightweight poster image only, so the hero never blocks or stalls.
+ */
+function useAllowBackgroundVideo() {
+  const [allow, setAllow] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    const connection = (
+      navigator as Navigator & {
+        connection?: { saveData?: boolean; effectiveType?: string };
+      }
+    ).connection;
+    const saveData = connection?.saveData === true;
+    const slowNetwork = /(^|-)2g$/.test(connection?.effectiveType ?? '');
+
+    if (reduceMotion || saveData || slowNetwork) return;
+    setAllow(true);
+  }, []);
+
+  return allow;
+}
 
 export function HomePage() {
   useEffect(() => {
@@ -25,12 +54,14 @@ export function HomePage() {
   const copy = t[lang];
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoReady, setVideoReady] = useState(false);
+  const allowVideo = useAllowBackgroundVideo();
 
   useEffect(() => {
+    if (!allowVideo) return;
     const video = videoRef.current;
     if (!video) return;
     void video.play().catch(() => {});
-  }, []);
+  }, [allowVideo]);
 
   const previewRoutes = routeList.slice(0, 6);
   const previewEvents = useMemo(() => getEvents(lang).slice(0, 6), [lang]);
@@ -39,21 +70,32 @@ export function HomePage() {
   return (
     <>
       <section className="relative min-h-screen overflow-hidden bg-[#0a0a0a]">
-        <video
-          ref={videoRef}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-            videoReady ? 'opacity-100' : 'opacity-0'
-          }`}
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
-          onCanPlay={() => setVideoReady(true)}
-        >
-          <source src={VIDEO_URL} type="video/mp4" />
-        </video>
+        <img
+          src={VIDEO_POSTER}
+          alt=""
+          aria-hidden
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        {allowVideo ? (
+          <video
+            ref={videoRef}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+              videoReady ? 'opacity-100' : 'opacity-0'
+            }`}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            poster={VIDEO_POSTER}
+            onCanPlay={() => setVideoReady(true)}
+          >
+            <source src={VIDEO_WEBM} type="video/webm" />
+            <source src={VIDEO_MP4} type="video/mp4" />
+          </video>
+        ) : null}
 
         <div className="absolute inset-0 flex flex-col">
           <div className="flex flex-1 flex-col justify-end px-6 pb-12 lg:grid lg:grid-cols-2 lg:items-end lg:pb-16 lg:px-12 xl:px-16">
