@@ -66,8 +66,11 @@ export function TestimonialsSection() {
                   <img
                     src={item.avatar}
                     alt=""
-                    className="h-10 w-10 rounded-full border border-amber-100 object-cover shadow-sm"
+                    width={40}
+                    height={40}
                     loading="lazy"
+                    decoding="async"
+                    className="h-10 w-10 rounded-full border border-amber-100 object-cover shadow-sm"
                   />
                   <p className="mt-4 text-sm font-semibold text-stone-800">{item.name}</p>
                   <p className="mt-2 text-sm leading-relaxed text-stone-600">{item.text}</p>
