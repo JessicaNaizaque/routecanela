@@ -20,7 +20,11 @@
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
-  # Everything else falls back to the app entry point
+  # A missing static asset (js/css/etc.) must 404 instead of returning the
+  # HTML shell -- otherwise the browser gets text/html for a module script and
+  # fails with a MIME-type error, showing a blank page.
+  RewriteRule \.(js|mjs|css|map|json|png|jpe?g|gif|svg|webp|ico|woff2?|mp4|webm)$ - [R=404,L]
+  # Everything else (real client-side routes) falls back to the app entry point
   RewriteRule ^ index.html [L]
 </IfModule>
 
