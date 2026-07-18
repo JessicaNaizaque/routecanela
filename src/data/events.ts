@@ -1015,6 +1015,47 @@ const eventSources: EventSource[] = [
       ],
     },
   },
+  {
+    id: 24,
+    slug: 'open-air-cinema',
+    image: '/assets/images/events/Routecanela_fac.png',
+    location: 'Berlin',
+    categoryKey: 'Cinema',
+    title: {
+      DE: 'Open-Air-Kino und Filmreihen im Freien',
+      EN: 'British Shorts and Short Film Festivals',
+      ES: 'British Shorts y festivales de cortometraje',
+    },
+    category: { DE: 'Kino', EN: 'Cinema', ES: 'Cine' },
+    date: { DE: 'Juni - August', EN: 'June - August', ES: 'Junio - Agosto' },
+    duration: { DE: '19:00 - 23:00 Uhr', EN: '10:00 am - 11:00 pm', ES: '10:00am - 23:00' },
+    recommendAudience: { DE: 'Alle Altersgruppen, Familien', EN: 'General', ES: 'General' },
+    description: {
+      DE: 'Das **British Shorts Film Festival** ist eines der wichtigsten Kurzfilmfestivals in Berlin und widmet sich dem zeitgenössischen Kurzfilm aus dem Vereinigten Königreich und Irland. \n Während der Veranstaltung wird eine vielfältige Auswahl an Kurzfilmen gezeigt - von Spielfilm, Dokumentarfilm über Animation bis hin zu experimentellen Arbeiten - ergänzt durch thematische Programme, Diskussionen und Treffen mit Filmschaffenden. Es ist eine zentrale Plattform, um neue Stimmen des unabhängigen Kurzfilms zu entdecken. \n Die Veranstaltung ist mit Eintrittskarten für die Öffentlichkeit zugänglich und eignet sich ideal für alle, die ein dynamisches, alternatives und konzentriertes Kinoerlebnis suchen, bei dem das Kurzfilmformat viele Geschichten in einer einzigen Session in verschiedenen Kulturorten der Stadt erlebbar macht.',
+      EN: "The **British Shorts Film Festival** is one of Berlin's most important short film festivals, dedicated to contemporary short cinema from the United Kingdom and Ireland. \n During the event, a diverse selection of short films is screened, ranging from fiction and documentary to animation and experimental works, accompanied by themed sessions, discussions, and meetings with filmmakers. It is a key platform for discovering new voices in independent short filmmaking. \n It is an event open to the public with a ticket, ideal for those seeking a dynamic, alternative, and concentrated cinematic experience, where the short format allows multiple stories to be explored in a single session across different cultural venues in the city.",
+      ES: 'El **British Shorts Film Festival** es uno de los festivales de cortometrajes más importantes de Berlín, dedicado al cine corto contemporáneo del Reino Unido e Irlanda. \n Durante el evento se proyecta una selección diversa de cortometrajes que abarcan ficción, documental, animación y experimentación, acompañados de sesiones temáticas, debates y encuentros con cineastas. Es una plataforma clave para descubrir nuevas voces del cine independiente en formato corto. \n Es un evento abierto al público mediante entrada, ideal para quienes buscan una experiencia cinematográfica dinámica, alternativa y concentrada, donde el formato corto permite explorar muchas historias en una sola sesión en distintos espacios culturales de la ciudad.',
+    },
+    highlights: {
+      DE: [
+        'Bootsrennen auf der Müggelspree',
+        'Kunsthandwerks- & Handwerkermarkt',
+        'Live-Musik am See',
+        'Fährfahrten zum Müggelsee',
+      ],
+      EN: [
+        'Boat races on the Müggelspree',
+        'Craft & artisan market',
+        'Lakeside live music',
+        'Ferry trips to the Müggelsee',
+      ],
+      ES: [
+        'Regatas en el Müggelspree',
+        'Mercado de artesanía',
+        'Música en vivo junto al lago',
+        'Travesías en ferry al Müggelsee',
+      ],
+    },
+  },
 ];
 
 function resolveEvent(source: EventSource, lang: Lang): EventItem {
