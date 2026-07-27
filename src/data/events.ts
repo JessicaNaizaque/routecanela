@@ -36,7 +36,7 @@ const eventSources: EventSource[] = [
   {
     id: 1,
     slug: 'Berliner Halbmarathon',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Maraton.jpg',
     location: 'Berlin',
     categoryKey: 'Sport',
     title: { DE: 'Berliner Halbmarathon', EN: 'Berliner Halbmarathon', ES: 'Berliner Halbmarathon' },
@@ -72,14 +72,14 @@ const eventSources: EventSource[] = [
   {
     id: 2,
     slug: 'MaerzMusik',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Maerz11.jpg',
     location: 'Berlin',
     categoryKey: 'Music',
     title: { DE: 'MaerzMusik', EN: 'MaerzMusik', ES: 'MaerzMusik' },
     category: { DE: 'Musik', EN: 'Music', ES: 'Música' },
     date: {
-      DE: 'März – findet einmal im Jahr statt',
-      EN: 'March – held once a year',
+      DE: 'März - findet einmal im Jahr statt',
+      EN: 'March - held once a year',
       ES: 'Marzo - se celebra una vez al año',
     },
     duration: { DE: '12:00 - 20:00 Uhr', EN: '12:00 - 20:00', ES: '12:00 - 20:00' },
@@ -89,9 +89,9 @@ const eventSources: EventSource[] = [
       ES: 'Festival de música contemporánea que reúne artistas internacionales en varios escenarios de la ciudad.',
     },
     description: {
-      DE: 'MaerzMusik hat seine Wurzeln in der musique concrète und der akusmatischen Musik, Genres, die die Wahrnehmung von Klang revolutionierten — heute zieht das Festival jährlich mehr als 20.000 Besucher zu über 100 Veranstaltungen an. Seit 2010 gibt es die Tradition 'QuerKlang', bei der junge Menschen eigene Stücke komponieren und uraufführen. Zwischen 2015 und 2019 schloss jede Ausgabe mit 'The Long Now', einer Zusammenarbeit mit Berlin Atonal von über 30 ununterbrochenen Stunden.',
+      DE: 'MaerzMusik hat seine Wurzeln in der musique concrète und der akusmatischen Musik, Genres, die die Wahrnehmung von Klang revolutionierten — heute zieht das Festival jährlich mehr als 20.000 Besucher zu über 100 Veranstaltungen an. Seit 2010 gibt es die Tradition QuerKlang, bei der junge Menschen eigene Stücke komponieren und uraufführen. Zwischen 2015 und 2019 schloss jede Ausgabe mit The Long Now, einer Zusammenarbeit mit Berlin Atonal von über 30 ununterbrochenen Stunden.',
       EN: "MaerzMusik has its roots in musique concrète and acousmatic music, genres that revolutionized how sound is perceived — today the festival draws more than 20,000 visitors each year across over 100 different events, organized by the Berliner Festspiele. Since 2010 it has kept the 'QuerKlang' tradition, where young people compose and premiere their own pieces. Between 2015 and 2019, each edition closed with 'The Long Now,' a collaboration with Berlin Atonal lasting more than 30 uninterrupted hours.",
-      ES: 'MaerzMusik tiene sus raíces en la música concreta y acusmática, géneros que revolucionaron la forma de percibir el sonido — hoy el festival reúne a más de 20.000 visitantes cada año en más de 100 eventos distintos, organizado por los Berliner Festspiele en el Haus der Berliner Festspiele y otras sedes. Desde 2010 mantiene la tradición 'QuerKlang', donde jóvenes componen y estrenan piezas propias. Entre 2015 y 2019, cada edición cerraba con 'The Long Now', una colaboración con Berlin Atonal de más de 30 horas ininterrumpidas de música.',
+      ES: 'MaerzMusik tiene sus raíces en la música concreta y acusmática, géneros que revolucionaron la forma de percibir el sonido — hoy el festival reúne a más de 20.000 visitantes cada año en más de 100 eventos distintos, organizado por los Berliner Festspiele en el Haus der Berliner Festspiele y otras sedes. Desde 2010 mantiene la tradición QuerKlang, donde jóvenes componen y estrenan piezas propias. Entre 2015 y 2019, cada edición cerraba con The Long Now, una colaboración con Berlin Atonal de más de 30 horas ininterrumpidas de música.',
     },
     highlights: {
       DE: [
@@ -108,7 +108,7 @@ const eventSources: EventSource[] = [
   {
     id: 3,
     slug: 'ITB Berlin',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/ITB-Berlin.jpg',
     location: 'Berlin',
     categoryKey: 'Tourismus',
     title: {
@@ -144,7 +144,7 @@ const eventSources: EventSource[] = [
   {
     id: 4,
     slug: 'Frauentag',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Frauentag.jpg',
     location: 'Berlin',
     categoryKey: 'Culture',
     title: {
@@ -185,7 +185,7 @@ const eventSources: EventSource[] = [
     id: 5,
     slug: 'Gallery Weekend Berlin',
     image:
-      '/assets/img/events/routecanela_fac.png',
+      '/assets/img/events/Gallery.Berlin',
     location: 'Berlin',
     categoryKey: 'Art',
     title: { DE: 'Gallery Weekend Berlin', EN: 'Gallery Weekend Berlin', ES: 'Gallery Weekend Berlin' },
@@ -217,7 +217,7 @@ const eventSources: EventSource[] = [
   {
     id: 6,
     slug: 'Berlin Design Week',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Design.Week.jpg',
     location: 'Varies',
     categoryKey: 'Design',
     title: { DE: 'Berlin Design Week', EN: 'Berlin Design Week', ES: 'Berlin Design Week' },
@@ -257,7 +257,7 @@ const eventSources: EventSource[] = [
   {
     id: 7,
     slug: 'Britzer Baumblüte',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Baumbl.jpg',
     location: 'Berlin',
     categoryKey: 'Science',
     title: { DE: 'Britzer Baumblüte', EN: 'Britzer Baumblüte', ES: 'Britzer Baumblüte' },
@@ -290,7 +290,7 @@ const eventSources: EventSource[] = [
     id: 8,
     slug: 'Achtung Berlin Festival',
     image:
-      '/assets/img/events/routecanela_fac.png',
+      '/assets/img/events/Achtung.berlin.jpg',
     location: 'Berlin',
     categoryKey: 'Music',
     title: { DE: 'Achtung Berlin Festival', EN: 'Achtung Berlin Festival', ES: 'Achtung Berlin Festival' },
@@ -322,7 +322,7 @@ const eventSources: EventSource[] = [
   {
     id: 9,
     slug: 'VELOBerlin',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/VeloBerlin.jpg',
     location: 'Berlin - Tempelhof',
     categoryKey: 'Sport',
     title: { DE: 'VELOBerlin', EN: 'VELOBerlin', ES: 'VELOBerlin' },
@@ -355,7 +355,7 @@ const eventSources: EventSource[] = [
     id: 10,
     slug: 'Veggienale',
     image:
-      '/assets/img/events/routecanela_fac.png',
+      '/assets/img/events/Veggienale.jpg',
     location: 'Berlin',
     categoryKey: 'Food',
     title: {
@@ -391,7 +391,7 @@ const eventSources: EventSource[] = [
   {
     id: 11,
     slug: 'Maifeiertag',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Maifeiertag.jpg',
     location: 'Teufelsberg',
     categoryKey: 'Culture',
     title: {
@@ -427,7 +427,7 @@ const eventSources: EventSource[] = [
   {
     id: 12,
     slug: 'Theatertreffen',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/theatertreffen.jpg',
     location: 'Berlin',
     categoryKey: 'Culture',
     title: {
@@ -459,7 +459,7 @@ const eventSources: EventSource[] = [
   {
     id: 13,
     slug: 'Karneval der Kulturen',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Karneval-kulturen.jpg',
     location: 'Kreuzberg',
     categoryKey: 'Sport',
     title: {
@@ -523,7 +523,7 @@ const eventSources: EventSource[] = [
   {
     id: 15,
     slug: 'Frühlingsfest Primavera',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Primavera.jpg',
     location: 'Schöneberg',
     categoryKey: 'Art',
     title: {
@@ -555,7 +555,7 @@ const eventSources: EventSource[] = [
   {
     id: 16,
     slug: 'Fête de la Musique',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Fette.jpg',
     location: 'Berlin',
     categoryKey: 'FMusic',
     title: {
@@ -587,7 +587,7 @@ const eventSources: EventSource[] = [
   {
     id: 17,
     slug: '48 Stunden Neukölln',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/48stunden.jpg',
     location: 'Neukölln',
     categoryKey: 'Culture',
     title: {
@@ -619,7 +619,7 @@ const eventSources: EventSource[] = [
   {
     id: 18,
     slug: 'Klassik Open Air Gendarmenmarkt',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Klassik.open',
     location: 'Mitte',
     categoryKey: 'Culture',
     title: {
@@ -630,7 +630,7 @@ const eventSources: EventSource[] = [
     category: { DE: 'Kultur', EN: 'Culture', ES: 'Cultura' },
     date: { DE: 'Juli', EN: 'July', ES: 'Julio' },
     duration: { DE: '19:00 - 23:00 Uhr', EN: '19:00 - 23:00', ES: '19:00 - 23:00' },
-    recommendAudience: { DE: 'Fünf Abende klassischer Musik unter freiem Himmel vor dem Konzerthaus.', EN: 'Five nights of open-air classical music in front of the Konzerthaus.', ES: 'Cinco noches de música clásica al aire libre frente al Konzerthaus.' },
+    recommendAudience: { DE: 'Fünf AbMalfestivalende klassischer Musik unter freiem Himmel vor dem Konzerthaus.', EN: 'Five nights of open-air classical music in front of the Konzerthaus.', ES: 'Cinco noches de música clásica al aire libre frente al Konzerthaus.' },
     description: {
       DE: "Der Name des Festivals verwendet bewusst das englische 'Classic' statt des deutschen 'Klassik'. Mit mehr als 30 Jahren Geschichte eröffnet die Ausgabe 2026 am 9. Juli mit dem Konzerthausorchester Berlin unter Joana Mallwitz, gefolgt von Künstlern wie David Garrett, Giovanni Zarrella und Alphaville.",
       EN: "The festival's own name deliberately uses the English 'Classic' instead of the German 'Klassik.' With more than 30 years of history, the 2026 edition opens on July 9 with the Konzerthausorchester Berlin under conductor Joana Mallwitz, followed by artists like David Garrett, Giovanni Zarrella, and the band Alphaville.",
@@ -651,7 +651,7 @@ const eventSources: EventSource[] = [
   {
     id: 19,
     slug: 'Moment Mal Festival',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Malfestival.jpg, 
     location: 'Mitte',
     categoryKey: 'Culture',
     title: {
@@ -747,7 +747,7 @@ const eventSources: EventSource[] = [
   {
     id: 22,
     slug: 'UdK Rundgang',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Udk.jpg',
     location: 'Berlin',
     categoryKey: 'Kunst',
     title: {
