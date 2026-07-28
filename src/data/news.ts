@@ -32,7 +32,7 @@ const newsSources: NewsSource[] = [
   {
     id: 1,
     slug: 'Mauerpark Flohmarkt',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/Routecanela_fac.png',x
     author: 'Laura Méndez',
     title: { DE: 'Mauerpark Flohmarkt', EN: 'Mauerpark Flohmarkt', ES: 'Mauerpark Flohmarkt' },
     date: {
@@ -179,7 +179,7 @@ const newsSources: NewsSource[] = [
   {
     id: 6,
     slug: 'Prinzessinnengärten',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/Cafevegan.jpg',
     author: 'Anna Schulz',
     title: { DE: 'Prinzessinnengärten', EN: 'Prinzessinnengärten', ES: 'Prinzessinnengärten' },
     date: {
@@ -207,7 +207,7 @@ const newsSources: NewsSource[] = [
   {
     id: 7,
     slug: 'Allmende-Kontor',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/Urban-garten.jpg',
     author: 'Laura Méndez',
     title: { DE: 'Allmende-Kontor', EN: 'Allmende-Kontor', ES: 'Allmende-Kontor' },
     date: {
@@ -235,7 +235,7 @@ const newsSources: NewsSource[] = [
   {
     id: 8,
     slug: 'Allmende-Kontor',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/Tempelhofer.jpg',
     author: 'Tomás García',
     title: { DE: 'Allmende-Kontor', EN: 'Allmende-Kontor', ES: 'Allmende-Kontor' },
     date: {
@@ -295,7 +295,7 @@ const newsSources: NewsSource[] = [
    {
     id: 10,
     slug: 'Gleisbeet',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/Gleisbeet.jgp',
     author: 'Anna Schulz',
     title: {
       DE: 'Ehemaliger Bahnhof Wriezen · Friedrichshain',
@@ -359,7 +359,7 @@ const newsSources: NewsSource[] = [
    {
     id: 12,
     slug: 'RAW-Gelände',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/IMG_2835.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'RAW-Gelände',
@@ -423,7 +423,7 @@ const newsSources: NewsSource[] = [
    {
     id: 14,
     slug: 'Ökowerk',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/okowerk.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Ökowerk',

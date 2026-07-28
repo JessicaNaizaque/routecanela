@@ -843,7 +843,7 @@ const eventSources: EventSource[] = [
   {
     id: 25,
     slug: 'Lange Nacht der Wissenschaften',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/2.1.png',
     location: 'Berlin',
     categoryKey: 'Culture',
     title: {
@@ -907,7 +907,7 @@ const eventSources: EventSource[] = [
     {
     id: 27,
     slug: 'Baden in städtischen Seen',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Kumelanke.jpg',
     location: 'Wannsee, Schlachtensee, Müggelsee',
     categoryKey: 'Culture',
     title: {
@@ -1003,7 +1003,7 @@ const eventSources: EventSource[] = [
     {
     id: 30,
     slug: 'Berlin Art Week',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/ALID4224.JPG',
     location: 'Museen in Berlin ',
     categoryKey: 'Culture',
     title: {
@@ -1035,7 +1035,7 @@ const eventSources: EventSource[] = [
     {
     id: 31,
     slug: 'Internationales Literaturfestival Berlin',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/IMG_2809.jpg',
     location: 'Berlin',
     categoryKey: 'Culture',
     title: {
@@ -1067,7 +1067,7 @@ const eventSources: EventSource[] = [
     {
     id: 32,
     slug: 'Positions Berlin Art Fair',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Berlin-Art-Fair.jpg',
     location: 'Tempelhof',
     categoryKey: 'Kunst',
     title: {
@@ -1163,7 +1163,7 @@ const eventSources: EventSource[] = [
     {
     id: 35,
     slug: 'Festival of Lights',
-    image: '/assets/img/events/routecanela_fac.png',
+    image: '/assets/img/events/Lights-Berlin.jpg',
     location: 'Berlin',
     categoryKey: 'Culture',
     title: {
