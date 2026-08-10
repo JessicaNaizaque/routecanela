@@ -488,38 +488,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-  {
-    id: 14,
-    slug: 'DFB-Pokalfinale',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Tempelhof',
-    categoryKey: 'Art',
-    title: {
-      DE: 'DFB-Pokalfinale',
-      EN: 'DFB-Pokalfinale',
-      ES: 'DFB-Pokalfinale',
-    },
-    category: { DE: 'Sport', EN: 'Sport', ES: 'Deporte' },
-    date: { DE: 'Mai', EN: 'May', ES: 'Mayo' },
-    duration: { DE: '12:00 - 21:00 Uhr', EN: '12:00 - 21:00', ES: '12:00 - 21:00' },
-    recommendAudience: { DE: 'Das Finale des DFB-Pokals im Olympiastadion.', EN: 'The German Cup football final, at the Olympic Stadium.', ES: 'La final de la Copa de Alemania de fútbol, en el Estadio Olímpico.' },
-    description: {
-      DE: 'Das DFB-Pokalfinale wird seit 1985 ununterbrochen im Olympiastadion ausgetragen — und im Februar 2026 wurde der Vertrag bis mindestens 2030 verlängert. Das Stadion fasst regulär 74.475 Zuschauer, für das Finale werden zusätzliche temporäre Tribünen für bis zu 76.000 Fans aufgebaut. Ab 14 Uhr füllt sich der Olympische Platz mit dem offiziellen Fan-Fest und dem DFB-Pokal 'Walk of Fame.'',
-      EN: "The German Cup final has been played at the Olympiastadion since 1985, without interruption — and in February 2026 the contract was extended to secure this tradition until at least 2030. The stadium's regular capacity is 74,475 spectators, but for the final, temporary additional stands are installed to accommodate up to 76,000 attendees. Starting at 2 pm, Olympischer Platz fills up with the official Fan Fest, where supporters can walk the DFB-Pokal 'Walk of Fame.'",
-      ES: 'La final de la Copa de Alemania se juega en el Olympiastadion desde 1985, sin interrupciones — y en febrero de 2026 se extendió el contrato para asegurar esta tradición hasta al menos 2030. El estadio tiene capacidad regular para 74.475 espectadores, pero para la final se instalan tribunas temporales adicionales que permiten llegar hasta 76.000 asistentes. Desde las 2 de la tarde, el Olympischer Platz se llena con el Fan-Fest oficial, donde los aficionados pueden recorrer el 'Walk of Fame' del DFB-Pokal.',
-    },
-    highlights: {
-      DE: [
-        'DFB-Pokalfinale, Fußball Berlin',
-      ],
-      EN: [
-        'German Cup final, football Berlin',
-      ],
-      ES: [
-        'Final Copa de Alemania, fútbol Berlín',
-      ],
-    },
-  },
+  
   {
     id: 15,
     slug: 'Frühlingsfest Primavera',
@@ -680,71 +649,9 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-  {
-    id: 20,
-    slug: 'Internationales Berliner Bierfestival',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Karl-Marx-Allee',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'Internationales Berliner Bierfestival',
-      EN: 'Internationales Berliner Bierfestival',
-      ES: 'Internationales Berliner Bierfestival',
-    },
-    category: { DE: 'Kultur', EN: 'Culture', ES: 'Cultura' },
-    date: { DE: 'Anfang August', EN: 'Early August', ES: 'Principios de agosto' },
-    duration: { DE: '13:00 - 23:00 Uhr', EN: '13:00 - 23:00', ES: '13:00 - 23:00' },
-    recommendAudience: { DE: 'Der längste Biergarten der Welt: 2,2 km Brauereien aus mehr als 90 Ländern.', EN: "The world's longest beer garden: 2.2 km of breweries from more than 90 countries.", ES: 'El jardín de cerveza más largo del mundo: 2,2 km de cervecerías de más de 90 países.' },
-    description: {
-      DE: 'Entlang der Karl-Marx-Allee entsteht jeden August, was als längster Biergarten der Welt gilt: 2,2 Kilometer Stände mit mehr als 350 Brauereien aus 90 verschiedenen Ländern, ohne Unterbrechung.',
-      EN: "Every August, Karl-Marx-Allee hosts what's considered the world's longest beer garden: 2.2 kilometers of stalls with more than 350 breweries from 90 different countries, one right after another without a break.",
-      ES: 'A lo largo de Karl-Marx-Allee se arma cada agosto el que se considera el jardín de cerveza más largo del mundo: 2,2 kilómetros de puestos con más de 350 cervecerías de 90 países distintos, una al lado de la otra sin interrupción.',
-    },
-    highlights: {
-      DE: [
-        'Bierfestival Berlin, Biergarten',
-      ],
-      EN: [
-        'beer festival Berlin, beer garden',
-      ],
-      ES: [
-        'Festival de cerveza Berlín, jardín de cerveza',
-      ],
-    },
-  },
-  {
-    id: 21,
-    slug: 'Pop-Kultur Festival',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Berlin',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'Pop-Kultur Festival',
-      EN: 'Pop-Kultur Festival',
-      ES: 'Pop-Kultur Festival',
-    },
-    category: { DE: 'Musik', EN: 'Music', ES: 'Música' },
-    date: { DE: 'August', EN: 'August', ES: 'Agosto' },
-    duration: { DE: '13:00 - 23:00 Uhr', EN: '13:00 - 23:00', ES: '13:00 - 23:00' },
-    recommendAudience: { DE: 'Pop-Musik-Festival und kulturelle Diskursformate an mehreren Spielorten.', EN: 'Pop music festival and cultural discourse formats across several venues.', ES: 'Festival de música pop y formatos de discurso cultural en varios escenarios.' },
-    description: {
-      DE: 'Pop-Kultur wurde 2015 als Nachfolgeveranstaltung der Berlin Music Week gegründet, organisiert vom Musicboard Berlin — die Ausgabe 2026, die 12., erweiterte sich erstmals zu einer siebentägigen, stadtweiten Residency, mit silent green Kulturquartier, Festsaal Kreuzberg und der historischen Kulturbrauerei in Prenzlauer Berg als Hauptspielorten.',
-      EN: "Pop-Kultur was born in 2015 as the successor to Berlin Music Week, organized by Musicboard Berlin — the 2026 edition, the 12th, expanded for the first time into a full 7-day, city-wide residency, with silent green Kulturquartier, Festsaal Kreuzberg, and the historic Kulturbrauerei in Prenzlauer Berg (the same former Schultheiss brewery from the Pankow story) as its main venues.",
-      ES: 'Pop-Kultur nació en 2015 como sucesor de la Berlin Music Week, organizado por Musicboard Berlin — la edición 2026, la número 12, se expandió por primera vez a una residencia de 7 días completos por toda la ciudad, con silent green Kulturquartier, Festsaal Kreuzberg y la histórica Kulturbrauerei de Prenzlauer Berg (la misma antigua cervecería Schultheiss que ya conocimos en la historia de Pankow) como sedes principales.',
-    },
-    highlights: {
-      DE: [
-        'Pop-Musikfestival Berlin, Kulturbrauerei',
-      ],
-      EN: [
-        'Pop-Music festival Berlin, Kulturbrauerei',
-      ],
-      ES: [
-        'Festival de música pop Berlín, Kulturbrauerei',
-      ],
-    },
-  },
-  {
+ 
+
+ {
     id: 22,
     slug: 'UdK Rundgang',
     image: '/assets/img/events/Udk.jpg',
@@ -776,70 +683,8 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-  {
-    id: 23,
-    slug: 'Mangofest',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Mitte',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'Mangofest',
-      EN: 'Mangofest',
-      ES: 'Mangofest',
-    },
-    category: { DE: 'Essen', EN: 'Foot', ES: 'Comida' },
-    date: { DE: 'Sommer', EN: 'Sommer', ES: 'Verano' },
-    duration: { DE: '13:00 - 19:00 Uhr', EN: '13:00 - 19:00', ES: '13:00 - 19:00' },
-    recommendAudience: { DE: 'Ein Festival ganz im Zeichen der Vielfalt von Mango-Gerichten und -Getränken.', EN: 'A festival entirely devoted to the diversity of mango dishes and drinks.', ES: 'Festival dedicado por completo a la diversidad de platos y bebidas con mango.' },
-    description: {
-      DE: 'Das Mangofest Berlin 2026 findet am 18. und 19. Juli bei Jules B-Part am Park am Gleisdreieck statt, mit mehr als 8 verschiedenen Küchen — mexikanisch, thailändisch, karibisch, philippinisch, vietnamesisch, westafrikanisch, indisch und aus Sri Lanka. Das Festival bietet eine Kinderzone, einen Flohmarkt und eine Bar nur für Mango-Cocktails.',
-      EN: "Mangofest Berlin 2026 takes place on July 18 and 19 at Jules B-Part, next to Park am Gleisdreieck, with more than 8 different cuisines — Mexican, Thai, Caribbean, Filipino, Vietnamese, West African, Indian, and Sri Lankan — each preparing their own take on mango. The festival includes a kids zone with face painting, a flea market, and a bar dedicated exclusively to mango cocktails.",
-      ES: 'Mangofest Berlin 2026 se celebra el 18 y 19 de julio en Jules B-Part, junto al Park am Gleisdreieck, con más de 8 cocinas distintas —mexicana, tailandesa, caribeña, filipina, vietnamita, de África Occidental, india y de Sri Lanka— preparando su propia versión del mango. El festival incluye una zona infantil con pintacaritas, un mercado de pulgas y un bar dedicado exclusivamente a cócteles de mango.',
-    },
-    highlights: {
-      DE: [
-        'Mango-Festival Berlin, Streetfood',
-      ],
-      EN: [
-        'Mango festival Berlin, street food',
-      ],
-      ES: [
-        'Festival del mango Berlín, comida callejera',
-      ],
-    },
-  },
-  {
-    id: 24,
-    slug: 'Freilichtkino-Saison',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Mitte',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'Freilichtkino-Saison',
-      EN: 'Freilichtkino-Saison',
-      ES: 'Freilichtkino-Saison',
-    },
-    category: { DE: 'Kultur', EN: 'Culture', ES: 'Cultura' },
-    date: { DE: 'November - Dezember', EN: 'November - December', ES: 'Noviembre - Diciembre' },
-    duration: { DE: '19:00 - 23:00 Uhr', EN: '19:00 - 23:00', ES: '19:00 - 23:00' },
-    recommendAudience: { DE: 'Die gesamte Freiluftkino-Saison, verteilt über Berlins Parks.', EN: "The entire open-air cinema season, spread across Berlin's parks.", ES: 'Toda la temporada de cines al aire libre repartidos por los parques de Berlín.' },
-    description: {
-      DE: 'Fast jeder Berliner Bezirk hat sein eigenes Freiluftkino, die Saison läuft von Mai bis September. Das in Friedrichshain, eines der größten der Stadt, bietet Platz für rund 2.000 Personen. Eigenes Essen und angeleinte Hunde sind erlaubt, die meisten zeigen Filme im Original mit deutschen Untertiteln.',
-      EN: "Almost every district in Berlin has its own open-air cinema, with the season running from May to September. Friedrichshain's, one of the largest in the city, seats around 2,000 people. You can bring your own food, bring dogs on a leash, and most screen films in their original language with German subtitles.",
-      ES: 'Casi todos los distritos de Berlín tienen su propio cine al aire libre, y la temporada corre de mayo a septiembre. El de Friedrichshain, uno de los más grandes de la ciudad, tiene capacidad para unas 2.000 personas. Se puede entrar con comida propia, con perros atados, y sin ningún techo entre la pantalla y las estrellas — la mayoría proyecta en idioma original con subtítulos en alemán.',
-    },
-    highlights: {
-      DE: [
-        'Freiluftkino Berlin, Sommersaison',
-      ],
-      EN: [
-        'Open air cinema Berlin, summer season',
-      ],
-      ES: [
-        'Cine al aire libre Berlín, temporada de verano',
-      ],
-    },
-  },
+  
+
   {
     id: 25,
     slug: 'Lange Nacht der Wissenschaften',
@@ -872,38 +717,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-  {
-    id: 26,
-    slug: 'Zug der Liebe',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Mitte',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'Zug der Liebe',
-      EN: 'Zug der Liebe',
-      ES: 'Zug der Liebe',
-    },
-    category: { DE: 'Kultur', EN: 'Culture', ES: 'Cultura' },
-    date: { DE: 'August', EN: 'August', ES: 'Agosto' },
-    duration: { DE: '13:00 - 23:00 Uhr', EN: '13:00 - 23:00', ES: '13:00 - 23:00' },
-    recommendAudience: { DE: 'Internationales Festival für zeitgenössischen Tanz in den wichtigsten Theatern der Stadt.', EN: "International contemporary dance festival at the city's main theaters.", ES: 'Festival internacional de danza contemporánea en los principales teatros de la ciudad.' },
-    description: {
-      DE: 'Tanz im August, eines der wichtigsten Festivals für zeitgenössischen Tanz in Europa, läuft 2026 vom 13. bis 29. August an mehreren Spielorten der Stadt — HAU1, HAU2, HAU3, Radialsystem, Sophiensæle, die Berlinische Galerie und sogar das Tempelhofer Feld.',
-      EN: "Tanz im August, one of Europe's most important contemporary dance festivals, runs from August 13 to 29, 2026, across several venues in the city — HAU1, HAU2, HAU3, Radialsystem, Sophiensæle, the Berlinische Galerie, and even Tempelhofer Feld itself.",
-      ES: 'Tanz im August, uno de los festivales de danza contemporánea más importantes de Europa, se extiende en 2026 del 13 al 29 de agosto por varias sedes de la ciudad —HAU1, HAU2, HAU3, Radialsystem, Sophiensæle, la Berlinische Galerie y hasta el propio Tempelhofer Feld— trayendo compañías internacionales y coreógrafos reconocidos.',
-    },
-    highlights: {
-      DE: [
-        'Tanzfestival Berlin, zeitgenössischer Tanz',
-      ],
-      EN: [
-        'Dance festival Berlin, contemporary dance',
-      ],
-      ES: [
-        'Festival de danza Berlín, danza contemporánea',
-      ],
-    },
-  },
+  
     {
     id: 27,
     slug: 'Baden in städtischen Seen',
@@ -936,69 +750,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-    {
-    id: 28,
-    slug: 'Musikfest Berlin',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Philharmonie und weitere Veranstaltungsorte',
-    categoryKey: 'Musik',
-    title: {
-      DE: 'Musikfest Berlin',
-      EN: 'Musikfest Berlin',
-      ES: 'Musikfest Berlin',
-    },
-    category: { DE: 'Musik', EN: 'Music', ES: 'Música' },
-    date: { DE: 'Ende August bis September', EN: 'Late August to September', ES: 'Finales de agosto y septiembre ' },
-    duration: { DE: '13:00 - 23:00 Uhr', EN: '13:00 - 23:00', ES: '13:00 - 23:00' },
-    recommendAudience: { DE: 'Berlins großes Festival für Orchestermusik, mit internationalen Orchestern.', EN: 'Berlins great orchestral music festival, with international orchestras.', ES: 'El gran festival de música orquestal de Berlín, con orquestas internacionales.' },
-    description: {
-      DE: 'Musikfest Berlin eröffnet die Konzertsaison der Stadt, organisiert von den Berliner Festspielen zusammen mit der Stiftung Berliner Philharmoniker. Die Ausgabe 2026, vom 28. August bis 23. September, feiert das 75-jährige Bestehen der Berliner Festspiele und eröffnet mit György Ligetis Oper 'Le Grand Macabre'.',
-      EN: "Musikfest Berlin opens the city's concert season, organized by the Berliner Festspiele together with the Berlin Philharmonic Foundation. The 2026 edition, from August 28 to September 23, celebrates the Berliner Festspiele's 75th anniversary and opens with György Ligeti's opera 'Le Grand Macabre' — around 40 concerts present 160 works by more than 80 composers, with guest orchestras like the Vienna Philharmonic and the London Symphony Orchestra.",
-      ES: 'Musikfest Berlin abre la temporada de conciertos de la ciudad, organizado por los Berliner Festspiele junto a la Fundación de la Filarmónica de Berlín. La edición 2026, del 28 de agosto al 23 de septiembre, celebra el 75 aniversario de los Berliner Festspiele y abre con la ópera 'Le Grand Macabre' de György Ligeti — cerca de 40 conciertos presentan 160 obras de más de 80 compositores, con orquestas invitadas como la Filarmónica de Viena y la Sinfónica de Londres.',
-    },
-    highlights: {
-      DE: [
-        'Orchestermusik Berlin, Berliner Philharmoniker',
-      ],
-      EN: [
-        'Orchestral music Berlin, Berlin Philharmonic',
-      ],
-      ES: [
-        'Música orquestal Berlín, Filarmónica de Berlín',
-      ],
-    },
-  },
-    {
-    id: 29,
-    slug: 'IFA Berlin',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Messe Berlin',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'IFA Berlin',
-      EN: 'IFA Berlin',
-      ES: 'IFA Berlin',
-    },
-    category: { DE: 'Kultur', EN: 'Culture', ES: 'Cultura' },
-    date: { DE: 'Ende August/Anfang September ', EN: 'Late August/early September ', ES: 'Fin de agosto/inicio de septiembre ' },
-    duration: { DE: '11:00 - 20:00 Uhr', EN: '11:00 - 20:00', ES: '11:00 - 20:00' },
-    recommendAudience: { DE: 'Die weltweit führende Messe für Unterhaltungselektronik, mit den neuesten technischen Innovationen.', EN: "The world's leading consumer electronics trade show, with the latest tech innovations.", ES: 'La feria líder mundial de electrónica de consumo, con las últimas novedades tecnológicas.' },
-    description: {
-      DE: "Die IFA Berlin wurde im Dezember 1924 als 'Große Deutsche Funkausstellung' gegründet — 2024 feierte sie ihr 100-jähriges Bestehen.",
-      EN: "IFA Berlin was born in December 1924 as the 'Great German Radio Exhibition' — it turned 100 in 2024.",
-      ES: "La IFA Berlin nació en diciembre de 1924 como la 'Gran Exposición Alemana de Radio' — cumplió 100 años en 2024. Hoy reúne a más de 1.800 expositores de más de 40 países.",
-    },
-    highlights: {
-      DE: [
-        'Technologiemesse Berlin, Unterhaltungselektronik',
-      ],
-      EN: [
-        'Technology fair Berlin, consumer electronics',
-      ],
-      ES: [
-        'Feria de tecnología Berlín, electrónica de consumo',
-      ],
-    },
+ 
   },
     {
     id: 30,
@@ -1097,70 +849,6 @@ const eventSources: EventSource[] = [
     },
   },
     {
-    id: 33,
-    slug: 'BMW Berlin-Marathon',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Berlin - Mitte',
-    categoryKey: 'Sport',
-    title: {
-      DE: 'BMW Berlin-Marathon',
-      EN: 'BMW Berlin-Marathon',
-      ES: 'BMW Berlin-Marathon',
-    },
-    category: { DE: 'Sport', EN: 'Sport', ES: 'Deporte' },
-    date: { DE: 'September', EN: 'September', ES: 'Septiembre' },
-    duration: { DE: '10:00 - 17:00 Uhr', EN: '10:00 - 17:00', ES: '10:00 - 17:00' },
-    recommendAudience: { DE: 'Einer der schnellsten und berühmtesten Marathons der Welt, mit Ziel am Brandenburger Tor.', EN: "One of the world's fastest and most famous marathons, finishing at the Brandenburg Gate.", ES: 'Uno de los maratones más rápidos y famosos del mundo, con meta en la Puerta de Brandeburgo.' },
-    description: {
-      DE: 'Horst Milde, ein Bäcker mit Leidenschaft für Leichtathletik, gründete das Rennen 1974 mit nur 244 Läufern durch den Grunewald.',
-      EN: "Horst Milde, a baker with a passion for athletics, founded the race in 1974 with just 244 runners on a course through the Grunewald forest.",
-      ES: 'Horst Milde, un panadero aficionado al atletismo, fundó la carrera en 1974 con apenas 244 corredores en un circuito por el bosque de Grunewald. Medio siglo después, más de 50.000 personas cruzan la meta cada año, y el circuito ha sido escenario de 13 récords mundiales.',
-    },
-    highlights: {
-      DE: [
-        'Berlin-Marathon, Weltrekordrennen',
-      ],
-      EN: [
-        'Berlin Marathon, world record race',
-      ],
-      ES: [
-        'Maratón de Berlín, carrera récord mundial',
-      ],
-    },
-  },
-    {
-    id: 34,
-    slug: 'Lollapalooza Berlin',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Mitte',
-    categoryKey: 'Musik',
-    title: {
-      DE: 'Lollapalooza Berlin',
-      EN: 'Lollapalooza Berlin',
-      ES: 'Lollapalooza Berlin',
-    },
-    category: { DE: 'Musik', EN: 'Music', ES: 'Música' },
-    date: { DE: 'September', EN: 'september', ES: 'September' },
-    duration: { DE: '11:00 - 23:00 Uhr', EN: '11:00 - 23:00', ES: '11:00 - 23:00' },
-    recommendAudience: { DE: 'Internationales Musikfestival mit Top-Künstlern im Olympiapark.', EN: 'International music festival with top-tier artists at the Olympiapark.', ES: 'Festival internacional de música con artistas de primer nivel en el Olympiapark.' },
-    description: {
-      DE: 'Berlin war seit seiner Ankunft 2015 die erste europäische Stadt, die Lollapalooza außerhalb der USA ausrichtete — das Originalfestival entstand 1991. Seitdem wuchs es auf mehr als 70.000 Besucher, mit zwei vollen Tagen im Olympiapark.',
-      EN: "Berlin was the first European city to host Lollapalooza outside the United States, since its arrival in 2015 — the original festival was born in 1991. Since then it has grown to more than 70,000 attendees, with two full days at Olympiapark; the 2026 edition takes place on July 18 and 19.",
-      ES: 'Berlín fue la primera ciudad europea en recibir Lollapalooza fuera de Estados Unidos, desde su llegada en 2015 — el festival original nació en 1991. Desde entonces ha crecido hasta superar los 70.000 asistentes, con ediciones de dos días completos en el Olympiapark; la de 2026 se celebra el 18 y 19 de julio.',
-    },
-    highlights: {
-      DE: [
-        'Musikfestival Olympiapark, internationales Festival',
-      ],
-      EN: [
-        'Olympiapark music festival, international festival',
-      ],
-      ES: [
-        'Festival de música Olympiapark, festival internacional',
-      ],
-    },
-  },
-    {
     id: 35,
     slug: 'Festival of Lights',
     image: '/assets/img/events/Lights-Berlin.jpg',
@@ -1192,167 +880,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-    {
-    id: 36,
-    slug: 'Gauklerfest',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Mitte',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'Gauklerfest',
-      EN: 'Gauklerfest',
-      ES: 'Gauklerfest',
-    },
-    category: { DE: 'Kultur', EN: 'Culture', ES: 'Cultura' },
-    date: { DE: 'Oktober ', EN: 'October', ES: 'Octubre' },
-    duration: { DE: '13:00 - 23:00 Uhr', EN: '13:00 - 23:00', ES: '13:00 - 23:00' },
-    recommendAudience: { DE: 'Familienfreundliches Straßenkunst-Festival im historischen Nikolaiviertel.', EN: 'Family-friendly street arts festival in the historic Nikolai Quarter.', ES: 'Festival familiar de artes callejeras en el histórico barrio de San Nicolás.' },
-    description: {
-      DE: 'Das Gauklerfest feiert 2026 seine 8. Ausgabe, vom 3. bis 5. Oktober, in der Zitadelle Spandau. Das Programm umfasst die mittelalterlichen Musiker 'Corvus Corax', die Akrobaten 'Flugträumer' und das 'Stelzentheater Hochkant', dazu ein handbetriebenes Riesenrad. Während des Fests kann der Juliusturm kostenlos erklommen werden.',
-      EN: "Gauklerfest celebrates its 8th edition in 2026, from October 3 to 5, inside the Spandau Citadel. The program includes medieval musicians 'Corvus Corax,' acrobats 'Flugträumer,' and stilt theater 'Stelzentheater Hochkant,' plus a hand-cranked Ferris wheel and carousel for kids. During the festival, visitors can climb the Juliusturm for free.",
-      ES: 'El Gauklerfest celebra en 2026 su octava edición, del 3 al 5 de octubre, dentro de la Ciudadela de Spandau. El programa incluye a los músicos medievales 'Corvus Corax', los acróbatas 'Flugträumer' y el teatro sobre zancos 'Stelzentheater Hochkant', además de una noria y un carrusel de manivela para los más chicos. Durante el festival, se puede subir gratis a la Torre Julius y visitar todos los museos de la ciudadela sin pagar entrada adicional.',
-    },
-    highlights: {
-      DE: [
-        'mittelalterliches Fest Berlin, Straßenkunst',
-      ],
-      EN: [
-        'Medieval festival Berlin, street arts',
-      ],
-      ES: [
-        'Festival medieval Berlín, artes callejeras',
-      ],
-    },
-  },
-    {
-    id: 37,
-    slug: 'Jazz in den Ministergärten',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Mitte',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'Jazz in den Ministergärten',
-      EN: 'Jazz in den Ministergärten',
-      ES: 'Jazz in den Ministergärten',
-    },
-    category: { DE: 'Kultur', EN: 'Culture', ES: 'Cultura' },
-    date: { DE: 'Oktober ', EN: 'October', ES: 'Octubre' },
-    duration: { DE: '18:00 - 21:00 Uhr', EN: '18:00 - 21:00', ES: '18:00 - 21:00' },
-    recommendAudience: { DE: 'Open-Air-Jazzkonzerte in historischer, grüner Umgebung.', EN: 'Open-air jazz concerts in a historic, green setting.', ES: 'Conciertos de jazz al aire libre en un entorno histórico y verde.' },
-    description: {
-      DE: 'Die Ministergärten, die normalerweise für die Öffentlichkeit geschlossen sind, öffnen ihre Pforten für eine Reihe von Jazzkonzerten unter freiem Himmel – ein intimes Erlebnis an einem wenig bekannten Ort der Stadt.',
-      EN: "The ministerial gardens, which are normally closed to the public, are opening their doors for a series of open-air jazz concerts – an intimate experience in a little-known part of the city.",
-      ES: 'Los jardines ministeriales, normalmente cerrados al público, se abren para una serie de conciertos de jazz al aire libre — una experiencia íntima en un escenario poco conocido de la ciudad.',
-    },
-    highlights: {
-      DE: [
-        'Open-Air-Jazz Berlin, Gartenkonzerte',
-      ],
-      EN: [
-        'Open air jazz Berlin, garden concerts',
-      ],
-      ES: [
-        'Jazz al aire libre Berlín, conciertos jardines',
-      ],
-    },
-  },
-    {
-    id: 38,
-    slug: 'Tag der Clubkultur',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Berlin',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'Tag der Clubkultur',
-      EN: 'Tag der Clubkultur',
-      ES: 'Tag der Clubkultur',
-    },
-    category: { DE: 'Kultur', EN: 'Culture', ES: 'Cultura' },
-    date: { DE: 'Oktober ', EN: 'October', ES: 'Octubre' },
-    duration: { DE: '17:00 - 23:00 Uhr', EN: '17:00 - 23:00', ES: '17:00 - 23:00' },
-    recommendAudience: { DE: 'Eine ganze Woche zur Sichtbarmachung der Vielfalt der Berliner Clubkultur.', EN: "A full week dedicated to showcasing the diversity of Berlin's club culture.", ES: 'Una semana entera dedicada a visibilizar la diversidad de la cultura de clubes berlinesa.' },
-    description: {
-      DE: 'Der „Tag der Clubkultur“ wurde 2020, mitten in der Pandemie, als Zeichen der Anerkennung für die Berliner Clubs ins Leben gerufen. Im Jahr 2026 wurden nicht nur 40 Clubs und Kollektive mit jeweils 10.000 Euro ausgezeichnet, sondern die Veranstaltung entwickelte sich erstmals zu einer ganzen Festivalwoche.',
-      EN: "'Club Culture Day' was launched in 2020, in the midst of the pandemic, as a gesture of recognition for Berlin's clubs. In 2026, not only were 40 clubs and collectives each awarded 10,000 euros, but the event also expanded for the first time into a full week-long festival.",
-      ES: 'El Tag der Clubkultur nació en 2020, en plena pandemia, como una señal de reconocimiento a los clubes berlineses. En 2026, además de premiar a 40 clubes y colectivos con 10.000 euros cada uno, se convirtió por primera vez en una semana festival completa.',
-    },
-    highlights: {
-      DE: [
-        'Tag der Clubkultur, Technoszene Berlin',
-      ],
-      EN: [
-        'Club culture day Berlin, techno Berlin',
-      ],
-      ES: [
-        'Cultura de clubes Berlín, techno Berlín',
-      ],
-    },
-  },
-    {
-    id: 39,
-    slug: 'Voices Berlin Festival',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Berlin',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'Voices Berlin Festival',
-      EN: 'Voices Berlin Festival',
-      ES: 'Voices Berlin Festival',
-    },
-    category: { DE: 'Kultur', EN: 'Culture', ES: 'Cultura' },
-    date: { DE: 'Oktober ', EN: 'October', ES: 'Octubre' },
-    duration: { DE: '15:00 - 21:00 Uhr', EN: '15:00 - 21:00', ES: '15:00 - 21:00' },
-    recommendAudience: { DE: 'Zeitgenössische Musik, Theater und Tanz von Künstlern aus aller Welt.', EN: 'Contemporary music, theater, and dance from artists around the world.', ES: 'Música, teatro y danza contemporánea de artistas de todo el mundo.' },
-    description: {
-      DE: 'Ein multidisziplinäres Festival, das verschiedene Formen des zeitgenössischen künstlerischen Ausdrucks vereint und bei dem Gastkünstler aus verschiedenen Ländern Werke präsentieren, die in Berlin bisher kaum zu sehen waren.',
-      EN: "A multidisciplinary festival that brings together various forms of contemporary artistic expression, featuring guest artists from different countries presenting works rarely seen in Berlin.",
-      ES: 'Un festival multidisciplinario que combina distintas formas de expresión artística contemporánea, con artistas invitados de diferentes países presentando trabajos poco vistos en Berlín.',
-    },
-    highlights: {
-      DE: [
-        'multidisziplinäres Festival Berlin, Tanz Theater Musik',
-      ],
-      EN: [
-        'Multidisciplinary festival Berlin, dance theater music',
-      ],
-      ES: [
-        'Festival multidisciplinario Berlín, danza teatro música',
-      ],
-    },
-  },
-    {
-    id: 40,
-    slug: 'Müggelsee-Halbmarathon',
-    image: '/assets/img/events/routecanela_fac.png',
-    location: 'Mitte',
-    categoryKey: 'Culture',
-    title: {
-      DE: 'Müggelsee-Halbmarathon',
-      EN: 'Müggelsee-Halbmarathon',
-      ES: 'Müggelsee-Halbmarathon',
-    },
-    category: { DE: 'Sport', EN: 'Sport', ES: 'Deporte' },
-    date: { DE: 'Oktober ', EN: 'October', ES: 'Octubre' },
-    duration: { DE: '08:00 - 14:00 Uhr', EN: '08:00 - 14:00', ES: '08:00 - 14:00' },
-    recommendAudience: { DE: 'Media maratón alrededor del lago más grande de Berlín, en pleno bosque.', EN: "Half marathon around Berlin's largest lake, deep in the forest.", ES: 'Media maratón alrededor del lago más grande de Berlín, en pleno bosque.' },
-    description: {
-      DE: "Der Müggelsee-Halbmarathon umrundet im Uhrzeigersinn den See, den die Berliner liebevoll 'die Badewanne' nennen.",
-      EN: "The Müggelsee-Halbmarathon circles clockwise around the lake Berliners affectionately nickname 'die Badewanne'.",
-      ES: "El Müggelsee-Halbmarathon rodea en sentido horario el lago que los berlineses apodan cariñosamente 'la Bañera' — die Badewanne — por su forma, en el sureste de la ciudad.",
-    },
-    highlights: {
-      DE: [
-        'Müggelsee-Halbmarathon, Seelauf Berlin',
-      ],
-      EN: [
-        'Müggelsee half marathon, lake race Berlin',
-      ],
-      ES: [
-        'Medio maratón Müggelsee, carrera lago Berlín',
-      ],
-    },
-  },
-];
+   
 
 function resolveEvent(source: EventSource, lang: Lang): EventItem {
   return {

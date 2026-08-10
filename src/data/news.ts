@@ -32,7 +32,7 @@ const newsSources: NewsSource[] = [
   {
     id: 1,
     slug: 'Mauerpark Flohmarkt',
-    image: '/assets/img/news/Routecanela_fac.png',x
+    image: '/assets/img/news/Flohmarkt.jpg',x
     author: 'Laura Méndez',
     title: { DE: 'Mauerpark Flohmarkt', EN: 'Mauerpark Flohmarkt', ES: 'Mauerpark Flohmarkt' },
     date: {
@@ -61,7 +61,7 @@ const newsSources: NewsSource[] = [
     id: 2,
     slug: 'Boxhagener Platz ('Boxi')',
     image:
-      '/assets/img/news/Routecanela_fac.png',
+      '/assets/img/news/Boxi.jpg',
     author: 'Tomás García',
     title: { DE: 'Boxhagener Platz (Boxi)', EN: 'Boxhagener Platz (Boxi)', ES: 'Boxhagener Platz (Boxi)' },
     date: {
@@ -89,7 +89,7 @@ const newsSources: NewsSource[] = [
   {
     id: 3,
     slug: 'Neukölln Flowmarkt',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/Neukölln',
     author: 'Anna Schulz',
     title: { DE: 'econd-Hand-Markt', EN: 'Secondhand market', ES: 'Mercado de segunda' },
     date: {
@@ -114,40 +114,12 @@ const newsSources: NewsSource[] = [
       ES: ['muebles de diseño', 'Neukölln Flowmarkt', 'Zonas verdes','Maybachufer'],
     },
   },
+  
   {
     id: 4,
-    slug: 'RAW-Gelände Flohmarkt',
-    image:
-      '/assets/img/news/Routecanela_fac.png',
-    author: 'Laura Méndez',
-    title: { DE: 'RAW-Gelände Flohmarkt', EN: 'RAW-Gelände Flohmarkt', ES: 'RAW-Gelände Flohmarkt' },
-    date: {
-      DE: 'Sonntags · Friedrichshain',
-      EN: 'Sundays · Friedrichshain',
-      ES: 'Domingos · Friedrichshain',
-    },
-    readTime: { DE: '3 Min. Lesezeit', EN: '3 min read', ES: '3 min de lectura' },
-    excerpt: {
-      DE: 'Markt in einer ehemaligen Eisenbahnwerkstatt, die zum kreativen Ort wurde.',
-      EN: 'Market inside a former railway workshop turned creative space.',
-      ES: 'Mercado dentro de un antiguo taller ferroviario reconvertido en espacio creativo.',
-    },
-    body: {
-      DE: 'Das Gelände, auf dem dieser Markt heute stattfindet, war ab 1867 eine Eisenbahnwerkstatt und beschäftigte um 1918 rund 1.200 Menschen unter dem Namen Reichsbahnausbesserungswerk. Erst seit 1999 wurde daraus der heutige Markt- und Street-Art-Ort, auf dem sich Vintage-Kleiderstände, Food Trucks und ständig wechselnde Wandbilder das Gelände teilen.',
-      EN: "The site where this market takes place operated as a railway workshop starting in 1867, and by 1918 employed 1,200 people under the name Reichsbahnausbesserungswerk — the source of the RAW initials. Only since 1999 has it become the market, street art, and alternative culture space it is now, with vintage clothing stalls, food trucks, and ever-changing murals all sharing the same grounds.",
-      ES: 'El terreno donde hoy se instala este mercado funcionó como taller ferroviario desde 1867, y hacia 1918 llegó a emplear a 1.200 personas bajo el nombre de Reichsbahnausbesserungswerk — de ahí vienen las siglas RAW que el lugar conserva hasta hoy. Solo desde 1999 se convirtió en el espacio de mercados, arte urbano y cultura alternativa que es ahora, y hoy conviven en el mismo predio puestos de ropa vintage, food trucks y murales que cambian todo el tiempo.',
-    },
-    tags: {
-      DE: ['Markt', 'Friedrichshain', 'Kunsthandwerk', 'RAW Gelände'],
-      EN: ['Market', 'Friedrichshain', 'Artisan', 'RAW Gelände'],
-      ES: ['Mercado', 'Friedrichshain', 'Artesanía', 'RAW Gelände'],
-    },
-  },
-  {
-    id: 5,
     slug: 'Arkonaplatz Flohmarkt',
     image:
-      '/assets/img/news/Routecanela_fac.png',
+      '/assets/img/news/Arkonaplatz.jpg',
     author: 'Tomás García',
     title: {
       DE: 'Arkonaplatz Flohmarkt',
@@ -177,7 +149,7 @@ const newsSources: NewsSource[] = [
     },
   },
   {
-    id: 6,
+    id: 5,
     slug: 'Prinzessinnengärten',
     image: '/assets/img/news/Cafevegan.jpg',
     author: 'Anna Schulz',
@@ -205,15 +177,15 @@ const newsSources: NewsSource[] = [
     },
   },
   {
-    id: 7,
-    slug: 'Allmende-Kontor',
-    image: '/assets/img/news/Urban-garten.jpg',
+    id: 6,
+    slug: 'RAW-Gelände Flohmarkt',
+    image: '/assets/img/news/Gelande.jpg',
     author: 'Laura Méndez',
-    title: { DE: 'Allmende-Kontor', EN: 'Allmende-Kontor', ES: 'Allmende-Kontor' },
+    title: { DE: 'RAW-Gelände Flohmarkt', EN: 'RAW-Gelände Flohmarkt', ES: 'RAW-Gelände Flohmarkt' },
     date: {
-      DE: 'Gartensaison: April bis Oktober (allgemeine Angabe, bitte vor dem Besuch überprüfen) · Tempelhofer Feld',
-      EN: 'Garden season: April to October (general information – please check before visiting) · Tempelhofer Feld',
-      ES: 'Temporada de jardín: abril a octubre (dato general, verificar antes de ir) · Tempelhofer Feld',
+      DE: 'Das Gelände, auf dem dieser Markt heute stattfindet, war ab 1867 eine Eisenbahnwerkstatt und beschäftigte um 1918 rund 1.200 Menschen unter dem Namen Reichsbahnausbesserungswerk. Erst seit 1999 wurde daraus der heutige Markt- und Street-Art-Ort, auf dem sich Vintage-Kleiderstände, Food Trucks und ständig wechselnde Wandbilder das Gelände teilen.',
+      EN: 'The site where this market takes place operated as a railway workshop starting in 1867, and by 1918 employed 1,200 people under the name Reichsbahnausbesserungswerk — the source of the RAW initials. Only since 1999 has it become the market, street art, and alternative culture space it is now, with vintage clothing stalls, food trucks, and ever-changing murals all sharing the same grounds.',
+      ES: 'El terreno donde hoy se instala este mercado funcionó como taller ferroviario desde 1867, y hacia 1918 llegó a emplear a 1.200 personas bajo el nombre de Reichsbahnausbesserungswerk — de ahí vienen las siglas RAW que el lugar conserva hasta hoy. Solo desde 1999 se convirtió en el espacio de mercados, arte urbano y cultura alternativa que es ahora, y hoy conviven en el mismo predio puestos de ropa vintage, food trucks y murales que cambian todo el tiempo.',
     },
     readTime: { DE: '4 Min. Lesezeit', EN: '4 min read', ES: '4 min de lectura' },
     excerpt: {
@@ -233,7 +205,7 @@ const newsSources: NewsSource[] = [
     },
   },
   {
-    id: 8,
+    id: 7,
     slug: 'Allmende-Kontor',
     image: '/assets/img/news/Tempelhofer.jpg',
     author: 'Tomás García',
@@ -261,9 +233,9 @@ const newsSources: NewsSource[] = [
     },
   },
   {
-    id: 9,
+    id: 8,
     slug: 'Himmelbeet',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/Himmelbeet.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Himmelbeet',
@@ -293,7 +265,7 @@ const newsSources: NewsSource[] = [
     },
   },
    {
-    id: 10,
+    id: 9,
     slug: 'Gleisbeet',
     image: '/assets/img/news/Gleisbeet.jgp',
     author: 'Anna Schulz',
@@ -325,9 +297,9 @@ const newsSources: NewsSource[] = [
     },
   },
    {
-    id: 11,
+    id: 10,
     slug: 'Klunkerkranich',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/Klunker.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Dachterrasse in Neukölln',
@@ -357,7 +329,7 @@ const newsSources: NewsSource[] = [
     },
   },
    {
-    id: 12,
+    id: 11,
     slug: 'RAW-Gelände',
     image: '/assets/img/news/IMG_2835.jpg',
     author: 'Anna Schulz',
@@ -389,9 +361,9 @@ const newsSources: NewsSource[] = [
     },
   },
    {
-    id: 13,
+    id: 12,
     slug: 'Heldenmarkt',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/Heldenmarkt.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Herbstmesse · wechselnder Veranstaltungsort',
@@ -421,7 +393,7 @@ const newsSources: NewsSource[] = [
     },
   },
    {
-    id: 14,
+    id: 13,
     slug: 'Ökowerk',
     image: '/assets/img/news/okowerk.jpg',
     author: 'Anna Schulz',
@@ -453,9 +425,9 @@ const newsSources: NewsSource[] = [
     },
   },
    {
-    id: 15,
+    id: 14,
     slug: 'BSR Second-Hand-Kaufhaus',
-    image: '/assets/img/news/Routecanela_fac.png',
+    image: '/assets/img/news/Secondhand.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Himmelbeet',
