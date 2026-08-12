@@ -3,6 +3,7 @@ import { Layout } from './components/Layout';
 import { EventDetailPage } from './pages/EventDetailPage';
 import { EventsPage } from './pages/EventsPage';
 import { HomePage } from './pages/HomePage';
+import { ImpressumPage } from './pages/ImpressumPage';
 import { NewsDetailPage } from './pages/NewsDetailPage';
 import { NewsPage } from './pages/NewsPage';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/events/:id" element={<EventDetailPage />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/news/:id" element={<NewsDetailPage />} />
+        <Route path="/impressum" element={<ImpressumPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
