@@ -4,7 +4,7 @@ import { getEvents } from '../data/events';
 import { getNews } from '../data/news';
 import { routes as routeList } from '../data/routes';
 import { useLanguage } from '../context/LanguageContext';
-import { t } from '../translations';
+import { t, type Lang } from '../translations';
 import { AnimatedHeading } from '../components/AnimatedHeading';
 import { EventCard } from '../components/EventCard';
 import { FadeIn } from '../components/FadeIn';
@@ -16,7 +16,13 @@ import { TestimonialsSection } from '../components/TestimonialsSection';
 
 const VIDEO_MP4 = '/assets/videos/routecanela-video-web.mp4';
 const VIDEO_WEBM = '/assets/videos/routecanela-video-web.mp4'; //TODO: change to webm
-const VIDEO_POSTER = '/assets/img/events/Eventos_Kreuzberg_Fahrrad_Route.jpg';
+const VIDEO_POSTER = '/assets/images/Mapa-Berlin-web-routecanela.jpg';
+
+const MAP_PDF_BY_LANG: Record<Lang, string> = {
+  DE: '/assets/pdfs/Mapa-routecanela-web-GeR.pdf',
+  EN: '/assets/pdfs/Mapa-routecanela-web-EnG.pdf',
+  ES: '/assets/pdfs/Mapa-routecanela-web-EsP.pdf',
+};
 
 /**
  * Decide whether the decorative background video is worth loading.
@@ -105,7 +111,7 @@ export function HomePage() {
                 className="mb-4 text-4xl font-normal tracking-[-0.04em] md:text-5xl lg:text-6xl xl:text-7xl"
               />
               <FadeIn delay={800} duration={1000}>
-                <p className="mb-5 text-base text-gray-300 md:text-lg">{copy.hero_sub}</p>
+                <p className="mb-5 text-base text-gray-300 md:text-xl lg:text-2xl xl:text-3xl">52.52°N 13.40°E</p>
               </FadeIn>
               <FadeIn delay={1200} duration={1000}>
                 <div className="flex flex-wrap gap-4">
@@ -126,11 +132,17 @@ export function HomePage() {
             </div>
             <FadeIn delay={1400} duration={1000}>
               <div className="mt-10 flex h-full items-end justify-start lg:mt-0 lg:justify-end">
-                <div className="rounded-xl border-2 border-[#D4A853]/90 bg-white/85 px-6 py-3 shadow-lg backdrop-blur-sm">
-                  <p className="text-lg font-light text-stone-800 md:text-xl lg:text-2xl">
-                    {copy.exploring_tagline}
+                <a
+                  href={MAP_PDF_BY_LANG[lang]}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-3 rounded-xl border-2 border-[#D4A853]/90 bg-white/85 px-6 py-3 shadow-lg backdrop-blur-sm transition-all duration-200 hover:bg-[#D4A853] hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                >
+                  <p className="text-lg font-light text-stone-800 transition-colors group-hover:text-white md:text-xl lg:text-2xl">
+                    {copy.hero_download}
                   </p>
-                </div>
+                </a>
               </div>
             </FadeIn>
           </div>
