@@ -14,6 +14,8 @@ import { RouteCard } from '../components/RouteCard';
 import { SectionHeader } from '../components/SectionHeader';
 import { TestimonialsSection } from '../components/TestimonialsSection';
 
+export const HOME_HERO_ID = 'home-hero';
+
 const VIDEO_MP4 = '/assets/videos/routecanela-video-web.mp4';
 const VIDEO_WEBM = '/assets/videos/routecanela-video-web.mp4'; //TODO: change to webm
 const VIDEO_POSTER = '/assets/images/Mapa-Berlin-web-routecanela.jpg';
@@ -75,7 +77,7 @@ export function HomePage() {
 
   return (
     <>
-      <section className="relative min-h-screen overflow-hidden bg-[#0a0a0a]">
+      <section id={HOME_HERO_ID} className="relative min-h-screen overflow-hidden bg-[#0a0a0a]">
         <img
           src={VIDEO_POSTER}
           alt=""
