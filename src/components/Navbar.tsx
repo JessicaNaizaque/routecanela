@@ -1,17 +1,52 @@
 import { ArrowLeft, Menu, Search, X } from 'lucide-react';
-import { useMemo, useState } from 'react';
-import { NavLink, useMatch, useNavigate } from 'react-router-dom';
+import { useEffect, useMemo, useState } from 'react';
+import { NavLink, useLocation, useMatch, useNavigate } from 'react-router-dom';
 import { getEvents } from '../data/events';
 import { routes as routeData } from '../data/routes';
 import { useLanguage } from '../context/LanguageContext';
 import { t } from '../translations';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { SearchOverlay } from './SearchOverlay';
+import { HOME_HERO_ID } from '../pages/HomePage';
 
-const logoUrl = 'https://www.routecanela.de/assets/img/logoblanco.png';
+const LOGO_WHITE = 'https://www.routecanela.de/assets/img/logoblanco.png';
+const LOGO_YELLOW = 'https://www.routecanela.de/assets/img/logoamarillo.png';
 
 function stripLeadingArrow(label: string) {
   return label.replace(/^←\s*/, '').trim();
+}
+
+/**
+ * Tracks whether the navbar is currently overlapping the home page's
+ * video header, so the logo can swap to the yellow variant while it's
+ * on top of the video and back to white everywhere else.
+ */
+function useIsOverVideoHeader() {
+  const { pathname } = useLocation();
+  const [isOverVideo, setIsOverVideo] = useState(pathname === '/');
+
+  useEffect(() => {
+    if (pathname !== '/') {
+      setIsOverVideo(false);
+      return;
+    }
+
+    const hero = document.getElementById(HOME_HERO_ID);
+    if (!hero) {
+      setIsOverVideo(false);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsOverVideo(entry.isIntersecting),
+      { rootMargin: '-72px 0px 0px 0px', threshold: 0 }
+    );
+    observer.observe(hero);
+
+    return () => observer.disconnect();
+  }, [pathname]);
+
+  return isOverVideo;
 }
 
 function NavItem({
@@ -53,6 +88,9 @@ export function Navbar() {
   const navigate = useNavigate();
   const [searchOpen, setSearchOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const isOverVideoHeader = useIsOverVideoHeader();
+  const logoUrl = isOverVideoHeader ? LOGO_YELLOW : LOGO_WHITE;
 
   const routeDetail = useMatch('/routes/:id');
 
