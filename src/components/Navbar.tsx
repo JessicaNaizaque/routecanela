@@ -8,7 +8,7 @@ import { t } from '../translations';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { SearchOverlay } from './SearchOverlay';
 
-const logoUrl = 'https://www.routecanela.de/assets/img/logo.png';
+const logoUrl = 'https://www.routecanela.de/assets/img/logoblanco.png';
 
 function stripLeadingArrow(label: string) {
   return label.replace(/^←\s*/, '').trim();
