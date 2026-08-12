@@ -106,6 +106,14 @@ export function Footer() {
                 {copy.nav_news}
               </Link>
             </li>
+            <li>
+              <Link
+                to="/impressum"
+                className="transition-colors hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40 rounded-sm"
+              >
+                {copy.footer_impressum}
+              </Link>
+            </li>
           </ul>
         </div>
 

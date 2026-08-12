@@ -4,7 +4,7 @@ import { Navbar } from './Navbar';
 import { PageTransition } from './PageTransition';
 
 const FOOTER_PATH =
-  /^\/($|routes(\/[^/]+)?|events(\/[^/]+)?|news(\/[^/]+)?)$/;
+  /^\/($|routes(\/[^/]+)?|events(\/[^/]+)?|news(\/[^/]+)?|impressum)$/;
 
 export function Layout() {
   const { pathname } = useLocation();
