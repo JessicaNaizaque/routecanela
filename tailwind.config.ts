@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        helvetica: ['Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
         accent: '#D4A853',

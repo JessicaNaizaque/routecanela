@@ -105,13 +105,21 @@ export function HomePage() {
           </video>
         ) : null}
 
+        <div className="absolute inset-0 px-6 lg:px-12 xl:px-16">
+          <AnimatedHeading
+            text={copy.hero_heading}
+            className="absolute top-1/2 -translate-y-1/2 left-[50%] text-left font-helvetica font-normal text-gray-300 tracking-[-0.04em]"
+            lineClassNames={[
+              'text-6xl leading-[1.0] md:text-7xl md:leading-[1.0] lg:text-8xl lg:leading-[1.0] xl:text-9xl xl:leading-[1.0]',
+              'text-5xl leading-[1.0] md:text-6xl md:leading-[1.0] lg:text-7xl lg:leading-[1.0] xl:text-8xl xl:leading-[1.0]',
+              'text-4xl leading-[1.0] md:text-5xl md:leading-[1.0] lg:text-6xl lg:leading-[1.0] xl:text-7xl xl:leading-[1.0]',
+            ]}
+          />
+        </div>
+
         <div className="absolute inset-0 flex flex-col">
           <div className="flex flex-1 flex-col justify-end px-6 pb-12 lg:grid lg:grid-cols-2 lg:items-end lg:pb-16 lg:px-12 xl:px-16">
             <div>
-              <AnimatedHeading
-                text={copy.hero_heading}
-                className="mb-4 text-4xl font-normal tracking-[-0.04em] md:text-5xl lg:text-6xl xl:text-7xl"
-              />
               <FadeIn delay={800} duration={1000}>
                 <p className="mb-5 text-base text-gray-300 md:text-xl lg:text-2xl xl:text-3xl">52.52°N 13.40°E</p>
               </FadeIn>
