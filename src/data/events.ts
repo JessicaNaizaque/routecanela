@@ -47,10 +47,10 @@ const eventSources: EventSource[] = [
       ES: 'Marzo/Abril · Centro de Berlín',
     },
     duration: { DE: '08:00 - 18:00 Uhr', EN: '08:00 AM - 18:00 PM', ES: '08:00 a. m. - 18:00 p. m.' },
-    recommendAudience: { 
-      DE: 'Eröffnet die Berliner Laufsaison, mit Tausenden Läufern, die die Innenstadt durchqueren.', 
-      EN: 'Opens Berlins racing season, with thousands of runners crossing the city center.', 
-      ES: 'Abre la temporada de carreras en Berlín, con miles de corredores cruzando el centro de la ciudad.' 
+    recommendAudience: {
+      DE: 'Eröffnet die Berliner Laufsaison, mit Tausenden Läufern, die die Innenstadt durchqueren.',
+      EN: 'Opens Berlins racing season, with thousands of runners crossing the city center.',
+      ES: 'Abre la temporada de carreras en Berlín, con miles de corredores cruzando el centro de la ciudad.'
     },
     description: {
       DE: 'Der Ursprung von SCC EVENTS, der Organisation hinter dem Halbmarathon, geht auf 1964 zurück, als Studenten der Freien Universität Berlin das erste Geländelauf-Rennen der Stadt auf dem Teufelsberg organisierten. Die Strecke ist genau 21,0975 km lang, die letzten 2 Kilometer führen direkt zum Brandenburger Tor über Unter den Linden. 2026 fand die 45. Ausgabe statt, mit mehr als 40.000 Teilnehmenden — mit stetig wachsendem Frauenanteil: 46% der Läuferinnen sind Frauen, gegenüber 39% im Jahr 2019.',
@@ -165,9 +165,9 @@ const eventSources: EventSource[] = [
       ES: 'Feriado en Berlín con actividades culturales y conmemorativas por toda la ciudad.',
     },
     description: {
-      DE: 'Der Internationale Frauentag wurde erstmals 1911 begangen und brachte in fünf Ländern mehr als eine Million Menschen auf die Straße — die zentrale Forderung damals war das Frauenwahlrecht. Berlin war ab 2019 das erste deutsche Bundesland, das den 8. März zum offiziellen Feiertag erklärte. Den ganzen März über organisieren verschiedene Bezirke den sogenannten 'Frauenmärz', einen ganzen Monat mit Vorträgen, Workshops und Kiezrundgängen.',
+      DE: "Der Internationale Frauentag wurde erstmals 1911 begangen und brachte in fünf Ländern mehr als eine Million Menschen auf die Straße — die zentrale Forderung damals war das Frauenwahlrecht. Berlin war ab 2019 das erste deutsche Bundesland, das den 8. März zum offiziellen Feiertag erklärte. Den ganzen März über organisieren verschiedene Bezirke den sogenannten 'Frauenmärz', einen ganzen Monat mit Vorträgen, Workshops und Kiezrundgängen.",
       EN: "International Women's Day was first observed in 1911, bringing more than a million people onto the streets in five countries: Denmark, Germany, Austria, Switzerland, and the United States — the central demand at the time was women's right to vote. Berlin was the first German federal state to make March 8 an official holiday, starting in 2019, alongside Mecklenburg-Vorpommern. Throughout March, different districts organize the so-called 'Frauenmärz,' a full month of talks, workshops, and neighborhood walks dedicated to women who shaped local history.",
-      ES: 'El Día Internacional de la Mujer se celebró por primera vez en 1911, y llevó a más de un millón de personas a las calles en cinco países: Dinamarca, Alemania, Austria, Suiza y Estados Unidos — la exigencia central de entonces era el derecho al voto femenino. Berlín fue el primer estado federado de Alemania en declarar el 8 de marzo feriado oficial, a partir de 2019, junto con Mecklemburgo-Pomerania Occidental. Durante todo marzo, distintos distritos organizan el llamado 'Frauenmärz', un mes completo de charlas, talleres y recorridos por el barrio dedicados a mujeres que marcaron la historia local.',
+      ES: "El Día Internacional de la Mujer se celebró por primera vez en 1911, y llevó a más de un millón de personas a las calles en cinco países: Dinamarca, Alemania, Austria, Suiza y Estados Unidos — la exigencia central de entonces era el derecho al voto femenino. Berlín fue el primer estado federado de Alemania en declarar el 8 de marzo feriado oficial, a partir de 2019, junto con Mecklemburgo-Pomerania Occidental. Durante todo marzo, distintos distritos organizan el llamado 'Frauenmärz', un mes completo de charlas, talleres y recorridos por el barrio dedicados a mujeres que marcaron la historia local.",
     },
     highlights: {
       DE: [
@@ -270,9 +270,9 @@ const eventSources: EventSource[] = [
       ES: 'El Britzer Garten se llena de flores de cerezo en su festival anual de primavera.',
     },
     description: {
-      DE: 'Die Britzer Baumblüte feiert 2026 ihre 70. Ausgabe, stets auf dem Gelände des Gutsparks Britz. Der Tradition nach eröffnet der Bezirksbürgermeister von Neukölln das Fest mit dem Anstich eines Freibierfasses. Zu den Attraktionen gehört die Familienachterbahn 'Nessi', mittwochs ist 'Familientag' mit ermäßigten Preisen. Der Eintritt ist frei, das Fest läuft vom 27. März bis 19. April.',
+      DE: "Die Britzer Baumblüte feiert 2026 ihre 70. Ausgabe, stets auf dem Gelände des Gutsparks Britz. Der Tradition nach eröffnet der Bezirksbürgermeister von Neukölln das Fest mit dem Anstich eines Freibierfasses. Zu den Attraktionen gehört die Familienachterbahn 'Nessi', mittwochs ist 'Familientag' mit ermäßigten Preisen. Der Eintritt ist frei, das Fest läuft vom 27. März bis 19. April.",
       EN: "The Britzer Baumblüte celebrates its 70th edition in 2026, always held on the grounds of Gutspark Britz. Tradition has it that the mayor of Neukölln district opens the festival by tapping a free beer barrel. Attractions include the family roller coaster 'Nessi,' and Wednesdays are 'Family Day,' with reduced prices on rides. Admission to the festival is free, running from March 27 to April 19.",
-      ES: 'La Britzer Baumblüte celebra en 2026 su edición número 70, siempre en el mismo terreno del Gutspark Britz. La tradición marca que sea el propio alcalde del distrito de Neukölln quien abra el festival perforando un barril de cerveza gratuita. Entre las atracciones está la montaña rusa familiar 'Nessi', y los miércoles son 'Día de la Familia', con precios reducidos. La entrada al festival es gratuita, y corre del 27 de marzo al 19 de abril.',
+      ES: "La Britzer Baumblüte celebra en 2026 su edición número 70, siempre en el mismo terreno del Gutspark Britz. La tradición marca que sea el propio alcalde del distrito de Neukölln quien abra el festival perforando un barril de cerveza gratuita. Entre las atracciones está la montaña rusa familiar 'Nessi', y los miércoles son 'Día de la Familia', con precios reducidos. La entrada al festival es gratuita, y corre del 27 de marzo al 19 de abril.",
     },
     highlights: {
       DE: [
@@ -488,7 +488,6 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-  
   {
     id: 15,
     slug: 'Frühlingsfest Primavera',
@@ -507,7 +506,7 @@ const eventSources: EventSource[] = [
     description: {
       DE: 'Das Berliner Frühlingsfest, mittlerweile in seiner 55. Ausgabe, eröffnet jedes Jahr auf dem Zentralen Festplatz die Frühjahrsmarkt-Saison.',
       EN: "The Berliner Frühlingsfest, now in its 55th edition, opens Berlin's spring fair season every year at the Zentraler Festplatz.",
-      ES: 'El Berliner Frühlingsfest, en su edición número 55, abre la temporada de ferias populares de Berlín cada primavera en el Zentraler Festplatz — con casi 80 atracciones, incluida una noria gigante llamada 'Anubis' y la casa de sustos más grande del mundo.',
+      ES: "El Berliner Frühlingsfest, en su edición número 55, abre la temporada de ferias populares de Berlín cada primavera en el Zentraler Festplatz — con casi 80 atracciones, incluida una noria gigante llamada 'Anubis' y la casa de sustos más grande del mundo.",
     },
     highlights: {
       DE: [
@@ -539,7 +538,7 @@ const eventSources: EventSource[] = [
     description: {
       DE: 'Die Fête de la Musique wurde 1982 in Paris ins Leben gerufen, angetrieben vom französischen Kulturministerium, mit einer einzigen Regel, die bis heute gilt: Jeder Auftritt ist kostenlos, niemand wird durch Ticketverkäufe bezahlt. Berlin stieg 1995 ein und veranstaltet heute eine der größten Ausgaben außerhalb Frankreichs — mit rund 300 Bühnen verteilt auf die 12 Bezirke. Jeder kann ohne besondere Genehmigung akustische Musik auf der Straße spielen. 2026 ist Reinickendorf der Partnerbezirk.',
       EN: "The Fête de la Musique was born in 1982 in Paris, driven by the French Ministry of Culture, with a single rule that still holds today: every performance is free, and no one is paid through ticket sales. Berlin joined in 1995, and today runs one of the biggest editions outside France — with around 300 stages spread across its 12 districts. Anyone can play acoustic music on the street without a special permit, as long as they stay at least 20 meters from hospitals, care homes, or memorials, and keep each set under 60 minutes. In 2026, the partner district is Reinickendorf.",
-      ES: 'La Fête de la Musique nació en 1982 en París, impulsada por el Ministerio de Cultura francés, con una sola regla que se mantiene intacta hasta hoy: cada actuación es gratuita, y a nadie se le paga con la venta de entradas. Berlín se sumó en 1995, y hoy es una de las sedes más grandes fuera de Francia — con cerca de 300 escenarios repartidos por los 12 distritos. Cualquier persona puede tocar música acústica en la calle sin pedir permiso especial, siempre que respete una distancia mínima de 20 metros de hospitales, residencias o memoriales, y que cada set no supere los 60 minutos. Las presentaciones oficiales corren de 4 a 10 de la tarde; después, la fiesta se traslada a clubes y bares que se suman a la llamada 'Fête de la Musique'. En 2026, el distrito socio de la edición es Reinickendorf.',
+      ES: "La Fête de la Musique nació en 1982 en París, impulsada por el Ministerio de Cultura francés, con una sola regla que se mantiene intacta hasta hoy: cada actuación es gratuita, y a nadie se le paga con la venta de entradas. Berlín se sumó en 1995, y hoy es una de las sedes más grandes fuera de Francia — con cerca de 300 escenarios repartidos por los 12 distritos. Cualquier persona puede tocar música acústica en la calle sin pedir permiso especial, siempre que respete una distancia mínima de 20 metros de hospitales, residencias o memoriales, y que cada set no supere los 60 minutos. Las presentaciones oficiales corren de 4 a 10 de la tarde; después, la fiesta se traslada a clubes y bares que se suman a la llamada 'Fête de la Musique'. En 2026, el distrito socio de la edición es Reinickendorf.",
     },
     highlights: {
       DE: [
@@ -620,7 +619,7 @@ const eventSources: EventSource[] = [
   {
     id: 19,
     slug: 'Moment Mal Festival',
-    image: 'https://www.routecanela.de/assets/img/events/Malfestival.jpg', 
+    image: '/assets/img/events/Malfestival.jpg',
     location: 'Mitte',
     categoryKey: 'Culture',
     title: {
@@ -649,9 +648,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
- 
-
- {
+  {
     id: 22,
     slug: 'UdK Rundgang',
     image: 'https://www.routecanela.de/assets/img/events/Udk.jpg',
@@ -683,8 +680,6 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-  
-
   {
     id: 25,
     slug: 'Lange Nacht der Wissenschaften',
@@ -717,8 +712,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-  
-    {
+  {
     id: 27,
     slug: 'Baden in städtischen Seen',
     image: 'https://www.routecanela.de/assets/img/events/Kumelanke.jpg',
@@ -732,7 +726,7 @@ const eventSources: EventSource[] = [
     category: { DE: 'Kultur', EN: 'Culture', ES: 'Cultura' },
     date: { DE: 'Sommer', EN: 'Sommer', ES: 'Verano' },
     duration: { DE: '13:00 - 23:00 Uhr', EN: '13:00 - 23:00', ES: '13:00 - 23:00' },
-    recommendAudience: { DE: 'Die Berliner Tradition, in den Seen der Stadt zu schwimmen, sobald es warm wird.', EN: 'Berlin's tradition of swimming in the city's lakes once the warm weather arrives.', ES: 'La tradición berlinesa de nadar en los lagos de la ciudad cuando llega el calor.' },
+    recommendAudience: { DE: 'Die Berliner Tradition, in den Seen der Stadt zu schwimmen, sobald es warm wird.', EN: "Berlin's tradition of swimming in the city's lakes once the warm weather arrives.", ES: 'La tradición berlinesa de nadar en los lagos de la ciudad cuando llega el calor.' },
     description: {
       DE: 'Bis Mai 1907 war das Baden im Großen Wannsee verboten — nach Aufhebung des Verbots begann noch im selben Monat der Bau des Strandbads. Heute wählen die Berliner ihren See je nach gewünschter Stimmung: Schlachtensee und Krumme Lanke, waldumgeben; der Müggelsee, der größte und stillste; und der Wannsee selbst, der belebteste, mit seinem historischen Strandbad.',
       EN: "Until May 1907, swimming in the Großer Wannsee was banned — once the ban was lifted, construction of the beach began that same month. Today Berliners choose their lake based on the vibe they're after: Schlachtensee and Krumme Lanke, forest-ringed and quieter; the Müggelsee, the largest and quietest, out east; and Wannsee itself, the busiest, with its historic Strandbad.",
@@ -750,7 +744,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-    {
+  {
     id: 30,
     slug: 'Berlin Art Week',
     image: 'https://www.routecanela.de/assets/img/events/ALID4224.JPG',
@@ -782,7 +776,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-    {
+  {
     id: 31,
     slug: 'Internationales Literaturfestival Berlin',
     image: 'https://www.routecanela.de/assets/img/events/IMG_2809.jpg',
@@ -814,7 +808,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-    {
+  {
     id: 32,
     slug: 'Positions Berlin Art Fair',
     image: 'https://www.routecanela.de/assets/img/events/Berlin-Art-Fair.jpg',
@@ -846,7 +840,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-    {
+  {
     id: 35,
     slug: 'Festival of Lights',
     image: 'https://www.routecanela.de/assets/img/events/Lights-Berlin.jpg',
@@ -878,24 +872,24 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-] 
+]
 
-function resolveEvent(source: EventSource, lang: Lang): EventItem {
-  return {
-    id: source.id,
-    slug: source.slug,
-    image: source.image,
-    location: source.location,
-    categoryKey: source.categoryKey,
-    title: source.title[lang],
-    category: source.category[lang],
-    date: source.date[lang],
-    duration: source.duration[lang],
-    recommendAudience: source.recommendAudience[lang],
-    description: source.description[lang],
-    highlights: source.highlights[lang],
-  };
-}
+  function resolveEvent(source: EventSource, lang: Lang): EventItem {
+    return {
+      id: source.id,
+      slug: source.slug,
+      image: source.image,
+      location: source.location,
+      categoryKey: source.categoryKey,
+      title: source.title[lang],
+      category: source.category[lang],
+      date: source.date[lang],
+      duration: source.duration[lang],
+      recommendAudience: source.recommendAudience[lang],
+      description: source.description[lang],
+      highlights: source.highlights[lang],
+    };
+  }
 
 export function getEvents(lang: Lang): EventItem[] {
   return eventSources.map((source) => resolveEvent(source, lang));
