@@ -32,7 +32,7 @@ const newsSources: NewsSource[] = [
   {
     id: 1,
     slug: 'Mauerpark Flohmarkt',
-    image: '/assets/img/news/Flohmarkt.jpg',
+    image: 'https://www.routecanela.de/assets/img/news/Flohmarkt.jpg',
     author: 'Laura Méndez',
     title: { DE: 'Mauerpark Flohmarkt', EN: 'Mauerpark Flohmarkt', ES: 'Mauerpark Flohmarkt' },
     date: {

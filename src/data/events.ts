@@ -619,7 +619,7 @@ const eventSources: EventSource[] = [
   {
     id: 19,
     slug: 'Moment Mal Festival',
-    image: '/assets/img/events/Malfestival.jpg',
+    image: 'https://www.routecanela.de/assets/img/events/Malfestival.jpg',
     location: 'Mitte',
     categoryKey: 'Culture',
     title: {
