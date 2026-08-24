@@ -5,6 +5,9 @@ const STAND_DATE = new Intl.DateTimeFormat('de-DE', {
   month: 'long',
   year: 'numeric',
 }).format(new Date());
+const STAND_YEAR = new Intl.DateTimeFormat('de-DE', {
+  year: 'numeric',
+}).format(new Date());
 
 function Section({
   title,
@@ -187,6 +190,11 @@ export function ImpressumPage() {
             Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes
             bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
           </p>
+        </Section>
+        
+        <Section title="">
+        <p className="mt-4 text-sm text-stone-500">Impressum | Datenschutzerklärung | AGB | Cookie-Richtlinie</p>
+        <p className="mt-4 text-sm text-stone-500">© {STAND_YEAR} routecanela UG. Alle Rechte vorbehalten.</p>
         </Section>
       </div>
     </div>
