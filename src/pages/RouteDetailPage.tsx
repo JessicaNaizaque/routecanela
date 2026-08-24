@@ -68,6 +68,10 @@ export function RouteDetailPage() {
               </div>
             </div>
 
+            <p className="mb-10 text-base leading-relaxed text-stone-700">
+              {route.description[lang]}
+            </p>
+
             <section className="mb-10">
               <p className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-amber-700">
                 <Calendar className="h-4 w-4" aria-hidden />

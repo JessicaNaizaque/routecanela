@@ -1,9 +1,12 @@
+import type { Lang } from '../translations';
+
 export interface RouteItem {
   id: string;
   name: string;
   image: string;
   duration: string;
   distance: string;
+  description: Record<Lang, string>;
   events: string[];
   parks: string[];
   restaurants: string[];
@@ -16,6 +19,7 @@ export const routes: RouteItem[] = [
     image: 'https://www.routecanela.de/assets/img/routes/Charlottenburg.webp',
     duration: '30 min',
     distance: '7 km',
+    description: { DE: 'Charlottenburg', EN: 'Charlottenburg', ES: 'Charlottenburg' },
     events: [
       'Charlottenburger Frühlingsfest',
       'Classic Open Air am Gendarmenmarkt',
@@ -31,6 +35,7 @@ export const routes: RouteItem[] = [
     image: 'https://www.routecanela.de/assets/img/routes/Schoneberg.webp',
     duration: '1 hr 20 min',
     distance: '8.5 km',
+    description: { DE: 'Schöneberg', EN: 'Schöneberg', ES: 'Schöneberg' },
     events: [
       'Schöneberger Frühling',
       'Flohmarkt am Rathaus Schöneberg',
@@ -46,6 +51,7 @@ export const routes: RouteItem[] = [
     image: 'https://www.routecanela.de/assets/img/routes/Kreuzberg.webp',
     duration: '1 hr 30 min',
     distance: '9 km',
+    description: { DE: 'Kreuzberg', EN: 'Kreuzberg', ES: 'Kreuzberg' },
     events: ['XJAZZ Festival', 'Festival of Lights', 'Bergmannstraßenfest', 'MyFest'],
     parks: ['Görlitzer Park', 'Viktoriapark', 'Tempelhofer Feld', 'Prinzessinnengarten'],
     restaurants: ["Yellow Sunshine", 'Vöner', "Brammibal's Donuts", 'Chay Viet'],
@@ -56,6 +62,7 @@ export const routes: RouteItem[] = [
     image: 'https://www.routecanela.de/assets/img/routes/Friedenau.webp',
     duration: '1 hr',
     distance: '6 km',
+    description: { DE: 'Friedenau', EN: 'Friedenau', ES: 'Friedenau' },
     events: [
       'Mercado semanal en Breslauer Platz',
       'Talleres en el Nachbarschaftshaus Friedenau',
@@ -69,6 +76,7 @@ export const routes: RouteItem[] = [
     image: 'https://www.routecanela.de/assets/img/routes/Neukolln.webp',
     duration: '45 min',
     distance: '8 km',
+    description: { DE: 'Neukölln', EN: 'Neukölln', ES: 'Neukölln' },
     events: ['Neuköllner Maientage', 'Neukölln Arcaden Street Food Markt'],
     parks: ['Körnerpark', 'Britzer Garten', 'Park am Buschkrug'],
     restaurants: ['Jivamuktea Café', 'Ohlàlà Veganerie', 'Café Morgenrot'],
@@ -79,6 +87,7 @@ export const routes: RouteItem[] = [
     image: 'https://www.routecanela.de/assets/img/routes/Prenzlauerberg.webp',
     duration: 'TBD',
     distance: 'TBD',
+    description: { DE: 'Prenzlauerberg', EN: 'Prenzlauerberg', ES: 'Prenzlauerberg' },
     events: ['Sommerfest im Mauerpark', 'Jazz im Park'],
     parks: ['Ernst-Thälmann-Park', 'Kollwitzplatz', 'Volkspark Friedrichshain'],
     restaurants: ["Brammibal's Donuts", 'Happies', 'Satt & Glücklich'],
@@ -89,6 +98,7 @@ export const routes: RouteItem[] = [
     image: 'https://www.routecanela.de/assets/img/routes/Berlin_Mitte.webp',
     duration: 'TBD',
     distance: 'TBD',
+    description: { DE: 'Berlín Mitte', EN: 'Berlín Mitte', ES: 'Berlín Mitte' },
     events: [
       'Berlinale',
       'MaerzMusik',
@@ -110,6 +120,7 @@ export const routes: RouteItem[] = [
     image: 'https://www.routecanela.de/assets/img/routes/Steglitz.webp',
     duration: '2 hrs',
     distance: '13 km',
+    description: { DE: 'Steglitz', EN: 'Steglitz', ES: 'Steglitz' },
     events: [
       'Sommerkonzert im Stadtpark Steglitz',
       'Steglitzer Weinfest',
