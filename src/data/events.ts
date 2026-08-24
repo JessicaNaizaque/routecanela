@@ -36,7 +36,7 @@ const eventSources: EventSource[] = [
   {
     id: 1,
     slug: 'Berliner Halbmarathon',
-    image: '/assets/img/events/Maraton.jpg',
+    image: '/assets/images/events/Maraton.jpg',
     location: 'Berlin',
     categoryKey: 'Sport',
     title: { DE: 'Berliner Halbmarathon', EN: 'Berliner Halbmarathon', ES: 'Berliner Halbmarathon' },
@@ -72,7 +72,7 @@ const eventSources: EventSource[] = [
   {
     id: 2,
     slug: 'MaerzMusik',
-    image: '/assets/img/events/Maerz11.jpg',
+    image: '/assets/images/events/Maerz11.jpg',
     location: 'Berlin',
     categoryKey: 'Music',
     title: { DE: 'MaerzMusik', EN: 'MaerzMusik', ES: 'MaerzMusik' },
@@ -108,7 +108,7 @@ const eventSources: EventSource[] = [
   {
     id: 3,
     slug: 'ITB Berlin',
-    image: '/assets/img/events/ITB-Berlin.jpg',
+    image: '/assets/images/events/ITB-Berlin.jpg',
     location: 'Berlin',
     categoryKey: 'Tourismus',
     title: {
@@ -144,7 +144,7 @@ const eventSources: EventSource[] = [
   {
     id: 4,
     slug: 'Frauentag',
-    image: '/assets/img/events/Frauentag.jpg',
+    image: '/assets/images/events/Frauentag.jpg',
     location: 'Berlin',
     categoryKey: 'Culture',
     title: {
@@ -185,7 +185,7 @@ const eventSources: EventSource[] = [
     id: 5,
     slug: 'Gallery Weekend Berlin',
     image:
-      '/assets/img/events/Gallery.Berlin',
+      '/assets/images/events/Gallery.Berlin',
     location: 'Berlin',
     categoryKey: 'Art',
     title: { DE: 'Gallery Weekend Berlin', EN: 'Gallery Weekend Berlin', ES: 'Gallery Weekend Berlin' },
@@ -217,7 +217,7 @@ const eventSources: EventSource[] = [
   {
     id: 6,
     slug: 'Berlin Design Week',
-    image: '/assets/img/events/Design.Week.jpg',
+    image: '/assets/images/events/Design.Week.jpg',
     location: 'Varies',
     categoryKey: 'Design',
     title: { DE: 'Berlin Design Week', EN: 'Berlin Design Week', ES: 'Berlin Design Week' },
@@ -257,7 +257,7 @@ const eventSources: EventSource[] = [
   {
     id: 7,
     slug: 'Britzer Baumblüte',
-    image: '/assets/img/events/Baumbl.jpg',
+    image: '/assets/images/events/Baumbl.jpg',
     location: 'Berlin',
     categoryKey: 'Science',
     title: { DE: 'Britzer Baumblüte', EN: 'Britzer Baumblüte', ES: 'Britzer Baumblüte' },
@@ -290,7 +290,7 @@ const eventSources: EventSource[] = [
     id: 8,
     slug: 'Achtung Berlin Festival',
     image:
-      '/assets/img/events/Achtung.berlin.jpg',
+      '/assets/images/events/Achtung.berlin.jpg',
     location: 'Berlin',
     categoryKey: 'Music',
     title: { DE: 'Achtung Berlin Festival', EN: 'Achtung Berlin Festival', ES: 'Achtung Berlin Festival' },
@@ -322,7 +322,7 @@ const eventSources: EventSource[] = [
   {
     id: 9,
     slug: 'VELOBerlin',
-    image: '/assets/img/events/VeloBerlin.jpg',
+    image: '/assets/images/events/VeloBerlin.jpg',
     location: 'Berlin - Tempelhof',
     categoryKey: 'Sport',
     title: { DE: 'VELOBerlin', EN: 'VELOBerlin', ES: 'VELOBerlin' },
@@ -355,7 +355,7 @@ const eventSources: EventSource[] = [
     id: 10,
     slug: 'Veggienale',
     image:
-      '/assets/img/events/Veggienale.jpg',
+      '/assets/images/events/Veggienale.jpg',
     location: 'Berlin',
     categoryKey: 'Food',
     title: {
@@ -391,7 +391,7 @@ const eventSources: EventSource[] = [
   {
     id: 11,
     slug: 'Maifeiertag',
-    image: '/assets/img/events/Maifeiertag.jpg',
+    image: '/assets/images/events/Maifeiertag.jpg',
     location: 'Teufelsberg',
     categoryKey: 'Culture',
     title: {
@@ -427,7 +427,7 @@ const eventSources: EventSource[] = [
   {
     id: 12,
     slug: 'Theatertreffen',
-    image: '/assets/img/events/theatertreffen.jpg',
+    image: '/assets/images/events/theatertreffen.jpg',
     location: 'Berlin',
     categoryKey: 'Culture',
     title: {
@@ -459,7 +459,7 @@ const eventSources: EventSource[] = [
   {
     id: 13,
     slug: 'Karneval der Kulturen',
-    image: '/assets/img/events/Karneval-kulturen.jpg',
+    image: '/assets/images/events/Karneval-kulturen.jpg',
     location: 'Kreuzberg',
     categoryKey: 'Sport',
     title: {
@@ -491,7 +491,7 @@ const eventSources: EventSource[] = [
   {
     id: 15,
     slug: 'Frühlingsfest Primavera',
-    image: '/assets/img/events/Primavera.jpg',
+    image: '/assets/images/events/Primavera.jpg',
     location: 'Schöneberg',
     categoryKey: 'Art',
     title: {
@@ -523,7 +523,7 @@ const eventSources: EventSource[] = [
   {
     id: 16,
     slug: 'Fête de la Musique',
-    image: '/assets/img/events/Fette.jpg',
+    image: '/assets/images/events/Fette.jpg',
     location: 'Berlin',
     categoryKey: 'FMusic',
     title: {
@@ -555,7 +555,7 @@ const eventSources: EventSource[] = [
   {
     id: 17,
     slug: '48 Stunden Neukölln',
-    image: '/assets/img/events/48stunden.jpg',
+    image: '/assets/images/events/48stunden.jpg',
     location: 'Neukölln',
     categoryKey: 'Culture',
     title: {
@@ -587,7 +587,7 @@ const eventSources: EventSource[] = [
   {
     id: 18,
     slug: 'Klassik Open Air Gendarmenmarkt',
-    image: '/assets/img/events/Klassik.open',
+    image: '/assets/images/events/Klassik.open',
     location: 'Mitte',
     categoryKey: 'Culture',
     title: {
@@ -619,7 +619,7 @@ const eventSources: EventSource[] = [
   {
     id: 19,
     slug: 'Moment Mal Festival',
-    image: '/assets/img/events/Malfestival.jpg',
+    image: '/assets/images/events/Malfestival.jpg',
     location: 'Mitte',
     categoryKey: 'Culture',
     title: {
@@ -651,7 +651,7 @@ const eventSources: EventSource[] = [
   {
     id: 22,
     slug: 'UdK Rundgang',
-    image: '/assets/img/events/Udk.jpg',
+    image: '/assets/images/events/Udk.jpg',
     location: 'Berlin',
     categoryKey: 'Kunst',
     title: {
@@ -683,7 +683,7 @@ const eventSources: EventSource[] = [
   {
     id: 25,
     slug: 'Lange Nacht der Wissenschaften',
-    image: '/assets/img/events/2.1.png',
+    image: '/assets/images/events/2.1.png',
     location: 'Berlin',
     categoryKey: 'Culture',
     title: {
@@ -715,7 +715,7 @@ const eventSources: EventSource[] = [
   {
     id: 27,
     slug: 'Baden in städtischen Seen',
-    image: '/assets/img/events/Kumelanke.jpg',
+    image: '/assets/images/events/Kumelanke.jpg',
     location: 'Wannsee, Schlachtensee, Müggelsee',
     categoryKey: 'Culture',
     title: {
@@ -747,7 +747,7 @@ const eventSources: EventSource[] = [
   {
     id: 30,
     slug: 'Berlin Art Week',
-    image: '/assets/img/events/ALID4224.JPG',
+    image: '/assets/images/events/ALID4224.JPG',
     location: 'Museen in Berlin ',
     categoryKey: 'Culture',
     title: {
@@ -779,7 +779,7 @@ const eventSources: EventSource[] = [
   {
     id: 31,
     slug: 'Internationales Literaturfestival Berlin',
-    image: '/assets/img/events/IMG_2809.jpg',
+    image: '/assets/images/events/IMG_2809.jpg',
     location: 'Berlin',
     categoryKey: 'Culture',
     title: {
@@ -811,7 +811,7 @@ const eventSources: EventSource[] = [
   {
     id: 32,
     slug: 'Positions Berlin Art Fair',
-    image: '/assets/img/events/Berlin-Art-Fair.jpg',
+    image: '/assets/images/events/Berlin-Art-Fair.jpg',
     location: 'Tempelhof',
     categoryKey: 'Kunst',
     title: {
@@ -843,7 +843,7 @@ const eventSources: EventSource[] = [
   {
     id: 35,
     slug: 'Festival of Lights',
-    image: '/assets/img/events/Lights-Berlin.jpg',
+    image: '/assets/images/events/Lights-Berlin.jpg',
     location: 'Berlin',
     categoryKey: 'Culture',
     title: {
