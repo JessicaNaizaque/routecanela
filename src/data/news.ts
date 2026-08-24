@@ -32,7 +32,7 @@ const newsSources: NewsSource[] = [
   {
     id: 1,
     slug: 'Mauerpark Flohmarkt',
-    image: '/assets/images/news/Flohmarkt.jpg',
+    image: 'https://www.routecanela.de/assets/images/news/Flohmarkt.jpg',
     author: 'Laura Méndez',
     title: { DE: 'Mauerpark Flohmarkt', EN: 'Mauerpark Flohmarkt', ES: 'Mauerpark Flohmarkt' },
     date: {
@@ -61,7 +61,7 @@ const newsSources: NewsSource[] = [
     id: 2,
     slug: "Boxhagener Platz ('Boxi')",
     image:
-      '/assets/images/news/Boxi.jpg',
+      'https://www.routecanela.de/assets/images/news/Boxi.jpg',
     author: 'Tomás García',
     title: { DE: 'Boxhagener Platz (Boxi)', EN: 'Boxhagener Platz (Boxi)', ES: 'Boxhagener Platz (Boxi)' },
     date: {
@@ -89,7 +89,7 @@ const newsSources: NewsSource[] = [
   {
     id: 3,
     slug: 'Neukölln Flowmarkt',
-    image: '/assets/images/news/Neukölln',
+    image: 'https://www.routecanela.de/assets/images/news/Neukölln',
     author: 'Anna Schulz',
     title: { DE: 'econd-Hand-Markt', EN: 'Secondhand market', ES: 'Mercado de segunda' },
     date: {
@@ -119,7 +119,7 @@ const newsSources: NewsSource[] = [
     id: 4,
     slug: 'Arkonaplatz Flohmarkt',
     image:
-      '/assets/images/news/Arkonaplatz.jpg',
+      'https://www.routecanela.de/assets/images/news/Arkonaplatz.jpg',
     author: 'Tomás García',
     title: {
       DE: 'Arkonaplatz Flohmarkt',
@@ -151,7 +151,7 @@ const newsSources: NewsSource[] = [
   {
     id: 5,
     slug: 'Prinzessinnengärten',
-    image: '/assets/images/news/Cafevegan.jpg',
+    image: 'https://www.routecanela.de/assets/images/news/Cafevegan.jpg',
     author: 'Anna Schulz',
     title: { DE: 'Prinzessinnengärten', EN: 'Prinzessinnengärten', ES: 'Prinzessinnengärten' },
     date: {
@@ -179,7 +179,7 @@ const newsSources: NewsSource[] = [
   {
     id: 6,
     slug: 'RAW-Gelände Flohmarkt',
-    image: '/assets/images/news/Gelande.jpg',
+    image: 'https://www.routecanela.de/assets/images/news/Gelande.jpg',
     author: 'Laura Méndez',
     title: { DE: 'RAW-Gelände Flohmarkt', EN: 'RAW-Gelände Flohmarkt', ES: 'RAW-Gelände Flohmarkt' },
     date: {
@@ -207,7 +207,7 @@ const newsSources: NewsSource[] = [
   {
     id: 7,
     slug: 'Allmende-Kontor',
-    image: '/assets/images/news/Tempelhofer.jpg',
+    image: 'https://www.routecanela.de/assets/images/news/Tempelhofer.jpg',
     author: 'Tomás García',
     title: { DE: 'Allmende-Kontor', EN: 'Allmende-Kontor', ES: 'Allmende-Kontor' },
     date: {
@@ -235,7 +235,7 @@ const newsSources: NewsSource[] = [
   {
     id: 8,
     slug: 'Himmelbeet',
-    image: '/assets/images/news/Himmelbeet.jpg',
+    image: 'https://www.routecanela.de/assets/images/news/Himmelbeet.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Himmelbeet',
@@ -267,7 +267,7 @@ const newsSources: NewsSource[] = [
   {
     id: 9,
     slug: 'Gleisbeet',
-    image: '/assets/images/news/Gleisbeet.jgp',
+    image: 'https://www.routecanela.de/assets/images/news/Gleisbeet.jgp',
     author: 'Anna Schulz',
     title: {
       DE: 'Ehemaliger Bahnhof Wriezen · Friedrichshain',
@@ -299,7 +299,7 @@ const newsSources: NewsSource[] = [
   {
     id: 10,
     slug: 'Klunkerkranich',
-    image: '/assets/images/news/Klunker.jpg',
+    image: 'https://www.routecanela.de/assets/images/news/Klunker.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Dachterrasse in Neukölln',
@@ -331,7 +331,7 @@ const newsSources: NewsSource[] = [
   {
     id: 11,
     slug: 'RAW-Gelände',
-    image: '/assets/images/news/IMG_2835.jpg',
+    image: 'https://www.routecanela.de/assets/images/news/IMG_2835.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'RAW-Gelände',
@@ -363,7 +363,7 @@ const newsSources: NewsSource[] = [
   {
     id: 12,
     slug: 'Heldenmarkt',
-    image: '/assets/images/news/Heldenmarkt.jpg',
+    image: 'https://www.routecanela.de/assets/images/news/Heldenmarkt.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Herbstmesse · wechselnder Veranstaltungsort',
@@ -395,7 +395,7 @@ const newsSources: NewsSource[] = [
   {
     id: 13,
     slug: 'Ökowerk',
-    image: '/assets/images/news/okowerk.jpg',
+    image: 'https://www.routecanela.de/assets/images/news/okowerk.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Ökowerk',
@@ -427,7 +427,7 @@ const newsSources: NewsSource[] = [
   {
     id: 14,
     slug: 'BSR Second-Hand-Kaufhaus',
-    image: '/assets/images/news/Secondhand.jpg',
+    image: 'https://www.routecanela.de/assets/images/news/Secondhand.jpg',
     author: 'Anna Schulz',
     title: {
       DE: 'Himmelbeet',
