@@ -47,10 +47,10 @@ const eventSources: EventSource[] = [
       ES: 'Marzo/Abril · Centro de Berlín',
     },
     duration: { DE: '08:00 - 18:00 Uhr', EN: '08:00 AM - 18:00 PM', ES: '08:00 a. m. - 18:00 p. m.' },
-    recommendAudience: { 
-      DE: 'Eröffnet die Berliner Laufsaison, mit Tausenden Läufern, die die Innenstadt durchqueren.', 
-      EN: 'Opens Berlins racing season, with thousands of runners crossing the city center.', 
-      ES: 'Abre la temporada de carreras en Berlín, con miles de corredores cruzando el centro de la ciudad.' 
+    recommendAudience: {
+      DE: 'Eröffnet die Berliner Laufsaison, mit Tausenden Läufern, die die Innenstadt durchqueren.',
+      EN: 'Opens Berlins racing season, with thousands of runners crossing the city center.',
+      ES: 'Abre la temporada de carreras en Berlín, con miles de corredores cruzando el centro de la ciudad.'
     },
     description: {
       DE: 'Der Ursprung von SCC EVENTS, der Organisation hinter dem Halbmarathon, geht auf 1964 zurück, als Studenten der Freien Universität Berlin das erste Geländelauf-Rennen der Stadt auf dem Teufelsberg organisierten. Die Strecke ist genau 21,0975 km lang, die letzten 2 Kilometer führen direkt zum Brandenburger Tor über Unter den Linden. 2026 fand die 45. Ausgabe statt, mit mehr als 40.000 Teilnehmenden — mit stetig wachsendem Frauenanteil: 46% der Läuferinnen sind Frauen, gegenüber 39% im Jahr 2019.',
@@ -488,7 +488,6 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-  
   {
     id: 15,
     slug: 'Frühlingsfest Primavera',
@@ -620,7 +619,7 @@ const eventSources: EventSource[] = [
   {
     id: 19,
     slug: 'Moment Mal Festival',
-    image: '/assets/img/events/Malfestival.jpg, 
+    image: '/assets/img/events/Malfestival.jpg',
     location: 'Mitte',
     categoryKey: 'Culture',
     title: {
@@ -649,9 +648,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
- 
-
- {
+  {
     id: 22,
     slug: 'UdK Rundgang',
     image: '/assets/img/events/Udk.jpg',
@@ -683,8 +680,6 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-  
-
   {
     id: 25,
     slug: 'Lange Nacht der Wissenschaften',
@@ -717,8 +712,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-  
-    {
+  {
     id: 27,
     slug: 'Baden in städtischen Seen',
     image: '/assets/img/events/Kumelanke.jpg',
@@ -750,9 +744,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
- 
-  },
-    {
+  {
     id: 30,
     slug: 'Berlin Art Week',
     image: '/assets/img/events/ALID4224.JPG',
@@ -784,7 +776,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-    {
+  {
     id: 31,
     slug: 'Internationales Literaturfestival Berlin',
     image: '/assets/img/events/IMG_2809.jpg',
@@ -816,7 +808,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-    {
+  {
     id: 32,
     slug: 'Positions Berlin Art Fair',
     image: '/assets/img/events/Berlin-Art-Fair.jpg',
@@ -848,7 +840,7 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-    {
+  {
     id: 35,
     slug: 'Festival of Lights',
     image: '/assets/img/events/Lights-Berlin.jpg',
@@ -880,24 +872,24 @@ const eventSources: EventSource[] = [
       ],
     },
   },
-   
+]
 
-function resolveEvent(source: EventSource, lang: Lang): EventItem {
-  return {
-    id: source.id,
-    slug: source.slug,
-    image: source.image,
-    location: source.location,
-    categoryKey: source.categoryKey,
-    title: source.title[lang],
-    category: source.category[lang],
-    date: source.date[lang],
-    duration: source.duration[lang],
-    recommendAudience: source.recommendAudience[lang],
-    description: source.description[lang],
-    highlights: source.highlights[lang],
-  };
-}
+  function resolveEvent(source: EventSource, lang: Lang): EventItem {
+    return {
+      id: source.id,
+      slug: source.slug,
+      image: source.image,
+      location: source.location,
+      categoryKey: source.categoryKey,
+      title: source.title[lang],
+      category: source.category[lang],
+      date: source.date[lang],
+      duration: source.duration[lang],
+      recommendAudience: source.recommendAudience[lang],
+      description: source.description[lang],
+      highlights: source.highlights[lang],
+    };
+  }
 
 export function getEvents(lang: Lang): EventItem[] {
   return eventSources.map((source) => resolveEvent(source, lang));
