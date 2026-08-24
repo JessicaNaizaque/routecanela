@@ -32,7 +32,7 @@ const newsSources: NewsSource[] = [
   {
     id: 1,
     slug: 'Mauerpark Flohmarkt',
-    image: '/assets/img/news/Flohmarkt.jpg',x
+    image: '/assets/img/news/Flohmarkt.jpg',
     author: 'Laura Méndez',
     title: { DE: 'Mauerpark Flohmarkt', EN: 'Mauerpark Flohmarkt', ES: 'Mauerpark Flohmarkt' },
     date: {
@@ -43,23 +43,23 @@ const newsSources: NewsSource[] = [
     readTime: { DE: '4 Min. Lesezeit', EN: '4 min read', ES: '4 min de lectura' },
     excerpt: {
       DE: 'Berlins berühmtester Flohmarkt, jeden Sonntag in Prenzlauer Berg.',
-      EN: 'Berlin's most famous flea market, every Sunday in Prenzlauer Berg.'
+      EN: "Berlin's most famous flea market, every Sunday in Prenzlauer Berg.",
       ES: 'El mercado de pulgas más famoso de Berlín, cada domingo en Prenzlauer Berg.',
     },
     body: {
-      DE: 'Der Flohmarkt im Mauerpark findet seit 2004 jeden Sonntag statt, mit Ständen von privaten Verkäufern — keinen Geschäften —, die Second-Hand-Kleidung, Vinylplatten, CDs, Schmuck und sogar ein eigenes Zelt nur für Möbel und Antiquitäten anbieten. Wenige Schritte entfernt beherbergt das natürliche Amphitheater des Hügels jeden Sonntagnachmittag das 'Bearpit Karaoke' — Berlins beliebteste spontane Gesangsshow.',
-      EN: 'The Mauerpark flea market has run every Sunday since 2004, with stalls run by private sellers — not businesses — offering secondhand clothing, vinyl records, CDs, jewelry, and even a tent dedicated solely to furniture and antiques. A few steps away, across the park's basketball court, the hill's natural amphitheater hosts 'Bearpit Karaoke' every Sunday afternoon — Berlin's most beloved impromptu singing show, where anyone can climb up and sing in front of hundreds of strangers.',
-      ES: 'El mercado de pulgas de Mauerpark funciona cada domingo desde 2004, con puestos de vendedores particulares —no negocios— ofreciendo ropa de segunda mano, discos de vinilo, CDs, joyería y hasta una carpa dedicada solo a muebles y antigüedades. A pocos metros, cruzando la cancha de básquet del parque, el anfiteatro natural de la colina alberga cada domingo por la tarde el 'Bearpit Karaoke' — el espectáculo de canto improvisado más querido de Berlín, donde cualquiera puede subir a cantar frente a cientos de desconocidos sentados en las gradas naturales.',
+      DE: "Der Flohmarkt im Mauerpark findet seit 2004 jeden Sonntag statt, mit Ständen von privaten Verkäufern — keinen Geschäften —, die Second-Hand-Kleidung, Vinylplatten, CDs, Schmuck und sogar ein eigenes Zelt nur für Möbel und Antiquitäten anbieten. Wenige Schritte entfernt beherbergt das natürliche Amphitheater des Hügels jeden Sonntagnachmittag das 'Bearpit Karaoke' — Berlins beliebteste spontane Gesangsshow.",
+      EN: "The Mauerpark flea market has run every Sunday since 2004, with stalls run by private sellers — not businesses — offering secondhand clothing, vinyl records, CDs, jewelry, and even a tent dedicated solely to furniture and antiques. A few steps away, across the park's basketball court, the hill's natural amphitheater hosts 'Bearpit Karaoke' every Sunday afternoon — Berlin's most beloved impromptu singing show, where anyone can climb up and sing in front of hundreds of strangers.",
+      ES: "El mercado de pulgas de Mauerpark funciona cada domingo desde 2004, con puestos de vendedores particulares —no negocios— ofreciendo ropa de segunda mano, discos de vinilo, CDs, joyería y hasta una carpa dedicada solo a muebles y antigüedades. A pocos metros, cruzando la cancha de básquet del parque, el anfiteatro natural de la colina alberga cada domingo por la tarde el 'Bearpit Karaoke' — el espectáculo de canto improvisado más querido de Berlín, donde cualquiera puede subir a cantar frente a cientos de desconocidos sentados en las gradas naturales.",
     },
     tags: {
       DE: ['Natur', 'Geheimtipps', 'Prenzlauer Berg, Flohmarkt Berlin,'],
       EN: ['Nature', 'Hidden gems', 'Prenzlauer Berg', 'Bearpit Karaoke'],
-      ES: ['Naturaleza', 'Joyas escondidas', 'Prenzlauer Berg','ropa vintage Berlín'],
+      ES: ['Naturaleza', 'Joyas escondidas', 'Prenzlauer Berg', 'ropa vintage Berlín'],
     },
   },
   {
     id: 2,
-    slug: 'Boxhagener Platz ('Boxi')',
+    slug: "Boxhagener Platz ('Boxi')",
     image:
       '/assets/img/news/Boxi.jpg',
     author: 'Tomás García',
@@ -76,9 +76,9 @@ const newsSources: NewsSource[] = [
       ES: 'La versión más local y relajada de Mauerpark, en el corazón de Friedrichshain.',
     },
     body: {
-      DE: 'Während sich der Mauerpark im Laufe der Jahre mit Touristen füllte, bleibt 'Boxi' der Markt, den die Friedrichshainer selbst bevorzugen — dieselbe Mischung aus Vintage-Kleidung, Platten und kuriosen Objekten, aber auf dem Platz eines Wohnviertels, ohne Touristenrouten. Sonntags dient der Platz auch als Treffpunkt für die umliegenden Cafés und Bars.',
+      DE: "Während sich der Mauerpark im Laufe der Jahre mit Touristen füllte, bleibt 'Boxi' der Markt, den die Friedrichshainer selbst bevorzugen — dieselbe Mischung aus Vintage-Kleidung, Platten und kuriosen Objekten, aber auf dem Platz eines Wohnviertels, ohne Touristenrouten. Sonntags dient der Platz auch als Treffpunkt für die umliegenden Cafés und Bars.",
       EN: "While Mauerpark filled up with tourists over the years, 'Boxi' remains the market Friedrichshain locals actually prefer — the same mix of vintage clothing, records, and curious objects, but set in a residential neighborhood square, without the tourist circuit or the crowds. On Sundays, the square also doubles as a meeting point for the cafés and bars around it.",
-      ES: 'Mientras Mauerpark se llenó de turistas con los años, 'Boxi' sigue siendo el mercado que prefieren los propios berlineses de Friedrichshain — misma esencia de ropa vintage, discos y objetos curiosos, pero en la plaza de un barrio residencial, sin el circuito turístico ni las multitudes. Los domingos, la plaza también sirve de punto de encuentro para las cafeterías y bares que la rodean.',
+      ES: "Mientras Mauerpark se llenó de turistas con los años, 'Boxi' sigue siendo el mercado que prefieren los propios berlineses de Friedrichshain — misma esencia de ropa vintage, discos y objetos curiosos, pero en la plaza de un barrio residencial, sin el circuito turístico ni las multitudes. Los domingos, la plaza también sirve de punto de encuentro para las cafeterías y bares que la rodean.",
     },
     tags: {
       DE: ['entspanntere ', 'Friedrichshain', 'Kaffee'],
@@ -104,17 +104,17 @@ const newsSources: NewsSource[] = [
       ES: 'Mercado de segunda mano junto al canal, con fuerte enfoque en sostenibilidad.',
     },
     body: {
-      DE: 'Anders als bei fast allen anderen Märkten der Stadt gibt es hier keine professionellen Händler — nur Nachbarn, die ihre eigenen Sachen verkaufen, mit dem Maybachufer-Kanal als Kulisse an jedem ersten und dritten Sonntag im Monat, von April bis November. Der Name selbst verbindet 'Neukölln' mit 'flow'.',
-      EN: 'Unlike almost every other market in the city, there are no professional dealers here — just neighbors selling their own belongings, many already recycled or repaired, with the Maybachufer canal as a backdrop every first and third Sunday of the month, from April to November. The name itself blends 'Neukölln' with 'flow,' a nod to the canal water.',
-      ES: 'A diferencia de casi todos los demás mercados de la ciudad, aquí no hay comerciantes profesionales — solo vecinos vendiendo sus propias pertenencias, muchas ya recicladas o reparadas, con el canal de Maybachufer como telón de fondo cada primer y tercer domingo del mes, de abril a noviembre. El propio nombre mezcla 'Neukölln' con 'flow', en referencia al agua del canal.',
+      DE: "Anders als bei fast allen anderen Märkten der Stadt gibt es hier keine professionellen Händler — nur Nachbarn, die ihre eigenen Sachen verkaufen, mit dem Maybachufer-Kanal als Kulisse an jedem ersten und dritten Sonntag im Monat, von April bis November. Der Name selbst verbindet 'Neukölln' mit 'flow'.",
+      EN: "Unlike almost every other market in the city, there are no professional dealers here — just neighbors selling their own belongings, many already recycled or repaired, with the Maybachufer canal as a backdrop every first and third Sunday of the month, from April to November. The name itself blends 'Neukölln' with 'flow, ' a nod to the canal water.",
+      ES: "A diferencia de casi todos los demás mercados de la ciudad, aquí no hay comerciantes profesionales — solo vecinos vendiendo sus propias pertenencias, muchas ya recicladas o reparadas, con el canal de Maybachufer como telón de fondo cada primer y tercer domingo del mes, de abril a noviembre. El propio nombre mezcla 'Neukölln' con 'flow', en referencia al agua del canal.",
     },
     tags: {
       DE: ['Designermöbel', 'Neukölln Flowmarkt', 'Grünflächen', 'Maybachufer'],
-      EN: ['designer furniture', 'Neukölln Flowmarkt', 'Green spaces','Maybachufer'],
-      ES: ['muebles de diseño', 'Neukölln Flowmarkt', 'Zonas verdes','Maybachufer'],
+      EN: ['designer furniture', 'Neukölln Flowmarkt', 'Green spaces', 'Maybachufer'],
+      ES: ['muebles de diseño', 'Neukölln Flowmarkt', 'Zonas verdes', 'Maybachufer'],
     },
   },
-  
+
   {
     id: 4,
     slug: 'Arkonaplatz Flohmarkt',
@@ -123,7 +123,7 @@ const newsSources: NewsSource[] = [
     author: 'Tomás García',
     title: {
       DE: 'Arkonaplatz Flohmarkt',
-      EN: 'Arkonaplatz Flohmarkt,
+      EN: 'Arkonaplatz Flohmarkt',
       ES: 'Arkonaplatz Flohmarkt',
     },
     date: {
@@ -223,7 +223,7 @@ const newsSources: NewsSource[] = [
     },
     body: {
       DE: 'Mitten im größten Park Berlins lädt dieser 5.000 m² große Gemeinschaftsgarten dazu ein, urbane Landwirtschaft aus der Nähe kennenzulernen — offen für alle, auch ohne Vorerfahrung. Da er innerhalb des Tempelhofer Felds liegt, besteht kein Risiko, das Gelände an neue Bebauung zu verlieren: Der Park ist durch einen Bürgerentscheid geschützt.',
-      EN: 'In the middle of Berlin's largest park, this 5,000-square-meter community garden invites visitors to see urban farming up close — with raised beds designed so anyone, with no prior experience, can join a planting or harvesting shift. Because it sits inside Tempelhofer Feld, there's no risk of losing the land to new construction: the park is protected by a citizen referendum.',
+      EN: "In the middle of Berlin's largest park, this 5,000-square-meter community garden invites visitors to see urban farming up close — with raised beds designed so anyone, with no prior experience, can join a planting or harvesting shift. Because it sits inside Tempelhofer Feld, there's no risk of losing the land to new construction: the park is protected by a citizen referendum.",
       ES: 'En medio del parque más grande de Berlín, este jardín comunitario de 5.000 m² invita a conocer de cerca cómo funciona la agricultura urbana — con huertos elevados pensados para que cualquiera, sin experiencia previa, pueda sumarse a un turno de siembra o cosecha. Al estar dentro del Tempelhofer Feld, no hay riesgo de que el terreno se pierda por una obra nueva: es parque protegido por decisión de un referéndum ciudadano.',
     },
     tags: {
@@ -264,7 +264,7 @@ const newsSources: NewsSource[] = [
       ES: ['Festival', 'Wedding', 'Historia', 'Gemeinschaftsgarten'],
     },
   },
-   {
+  {
     id: 9,
     slug: 'Gleisbeet',
     image: '/assets/img/news/Gleisbeet.jgp',
@@ -296,7 +296,7 @@ const newsSources: NewsSource[] = [
       ES: ['Festival', 'Friedrichshain,', 'balkongarten', 'Gemeinschaftsgarten'],
     },
   },
-   {
+  {
     id: 10,
     slug: 'Klunkerkranich',
     image: '/assets/img/news/Klunker.jpg',
@@ -318,9 +318,9 @@ const newsSources: NewsSource[] = [
       ES: 'Jardín y bar en una azotea de Neukölln, con vistas a toda la ciudad.',
     },
     body: {
-      DE: 'Der Aufstieg zu diesem Dachgarten bedeutet buchstäblich, mit dem Aufzug bis ins fünfte Parkdeck zu fahren und dann zu Fuß ins sechste weiterzugehen. Im Klunkerkranich selbst befindet sich die 'Horstwirtschaft', wahrscheinlich das höchstgelegene Stadtgarten-Projekt der Stadt: Im 'KlunkerGarten' wachsen Kräuter wie Wermut, Thymian und Oregano, die später in den Cocktails der Bar landen — der Zugang ist kostenlos.',
-      EN: 'Getting up to this rooftop garden literally means taking the elevator to the fifth floor of a parking garage and continuing on foot to the sixth — the reward is one of the best panoramic views in Berlin. Inside Klunkerkranich itself runs 'Horstwirtschaft,' probably the city's highest urban gardening project: herbs like wormwood, thyme, and oregano grow in the 'KlunkerGarten' and later end up in the bar's cocktails — access to the garden is free, because, in their own words, 'it should be there for everyone.',
-      ES: 'Subir a este jardín en la azotea implica literalmente tomar el ascensor hasta el quinto piso de un estacionamiento y seguir a pie hasta el sexto — la recompensa es una de las mejores vistas panorámicas de Berlín. Dentro del propio Klunkerkranich funciona la 'Horstwirtschaft', probablemente el proyecto de jardinería urbana más alto de la ciudad: en el 'KlunkerGarten' crecen hierbas como ajenjo, tomillo y orégano, que después terminan en los cócteles del bar — el acceso al jardín es gratuito, porque, según sus propias palabras, 'debe ser para todos'.',
+      DE: "Der Aufstieg zu diesem Dachgarten bedeutet buchstäblich, mit dem Aufzug bis ins fünfte Parkdeck zu fahren und dann zu Fuß ins sechste weiterzugehen. Im Klunkerkranich selbst befindet sich die 'Horstwirtschaft', wahrscheinlich das höchstgelegene Stadtgarten-Projekt der Stadt: Im 'KlunkerGarten' wachsen Kräuter wie Wermut, Thymian und Oregano, die später in den Cocktails der Bar landen — der Zugang ist kostenlos.",
+      EN: "Getting up to this rooftop garden literally means taking the elevator to the fifth floor of a parking garage and continuing on foot to the sixth — the reward is one of the best panoramic views in Berlin. Inside Klunkerkranich itself runs 'Horstwirtschaft,' probably the city's highest urban gardening project: herbs like wormwood, thyme, and oregano grow in the 'KlunkerGarten' and later end up in the bar's cocktails — access to the garden is free, because, in their own words, 'it should be there for everyone.",
+      ES: "Subir a este jardín en la azotea implica literalmente tomar el ascensor hasta el quinto piso de un estacionamiento y seguir a pie hasta el sexto — la recompensa es una de las mejores vistas panorámicas de Berlín. Dentro del propio Klunkerkranich funciona la 'Horstwirtschaft', probablemente el proyecto de jardinería urbana más alto de la ciudad: en el 'KlunkerGarten' crecen hierbas como ajenjo, tomillo y orégano, que después terminan en los cócteles del bar — el acceso al jardín es gratuito, porque, según sus propias palabras, 'debe ser para todos'.",
     },
     tags: {
       DE: ['Dachgarten Berlin', 'Wedding', 'Geschichte', 'Gemeinschaftsgarten'],
@@ -328,7 +328,7 @@ const newsSources: NewsSource[] = [
       ES: ['azotea Neukölln', 'Wedding', 'Historia', 'Gemeinschaftsgarten'],
     },
   },
-   {
+  {
     id: 11,
     slug: 'RAW-Gelände',
     image: '/assets/img/news/IMG_2835.jpg',
@@ -351,7 +351,7 @@ const newsSources: NewsSource[] = [
     },
     body: {
       DE: 'Seit 1999 umgenutzt, vereint diese über 8 Hektar große ehemalige Werkstatt heute Street Art, eine Kletterwand, ein Sommerbad und mehrere Bars unter einem industriellen Dach. Die Wandbilder wechseln alle paar Wochen, sodass kein Besuch dem vorherigen gleicht.',
-      EN: 'Repurposed since 1999, this former railway workshop of more than 8 hectares now combines street art, a climbing wall, a summer pool, and several bars under one industrial roof — the clearest example of how Berlin reuses its abandoned spaces instead of tearing them down. The murals on the walls change every few weeks, so no visit ever looks quite the same as the last.",
+      EN: "Repurposed since 1999, this former railway workshop of more than 8 hectares now combines street art, a climbing wall, a summer pool, and several bars under one industrial roof — the clearest example of how Berlin reuses its abandoned spaces instead of tearing them down. The murals on the walls change every few weeks, so no visit ever looks quite the same as the last.",
       ES: 'Reconvertido desde 1999, este antiguo taller ferroviario de más de 8 hectáreas hoy combina arte urbano, un muro de escalada, una piscina de verano y varios bares bajo un mismo techo industrial — la muestra más clara de cómo Berlín reutiliza sus espacios abandonados en vez de demolerlos. Las paredes cambian de mural cada pocas semanas, así que ninguna visita se ve exactamente igual a la anterior.',
     },
     tags: {
@@ -360,7 +360,7 @@ const newsSources: NewsSource[] = [
       ES: ['skatepark Friedrichshain,', 'Friedrichshain', 'Gemeinschaftsgarten'],
     },
   },
-   {
+  {
     id: 12,
     slug: 'Heldenmarkt',
     image: '/assets/img/news/Heldenmarkt.jpg',
@@ -382,17 +382,17 @@ const newsSources: NewsSource[] = [
       ES: 'Feria de otoño dedicada por completo a la sostenibilidad, con cerca de 100 expositores.',
     },
     body: {
-      DE: 'Bevor nachhaltige Marken in jedem Supermarkt zum Trend wurden, versammelte der Heldenmarkt bereits rund 100 Aussteller fairer Mode, bewusster Ernährung und sauberer Technologie unter dem Konzept eines 'temporären Kaufhauses' — mit kostenlosen Verkostungen und Vorträgen zu verantwortungsvollem Konsum.',
-      EN: 'Before sustainable brands became a trend in every supermarket, Heldenmarkt was already bringing together around 100 exhibitors of ethical fashion, mindful food, and clean tech under the concept of a 'temporary department store' — a fair designed to discover new brands before they go mainstream, with free tastings and talks on responsible consumption all weekend long.',
-      ES: 'Antes de que las marcas sostenibles fueran tendencia en cualquier supermercado, Heldenmarkt ya reunía cerca de 100 expositores de moda ética, alimentación consciente y tecnología limpia bajo el concepto de 'gran almacén temporal' — una feria pensada para descubrir marcas nuevas antes de que se vuelvan masivas, con degustaciones gratuitas y charlas sobre consumo responsable durante todo el fin de semana.',
+      DE: "Bevor nachhaltige Marken in jedem Supermarkt zum Trend wurden, versammelte der Heldenmarkt bereits rund 100 Aussteller fairer Mode, bewusster Ernährung und sauberer Technologie unter dem Konzept eines 'temporären Kaufhauses' — mit kostenlosen Verkostungen und Vorträgen zu verantwortungsvollem Konsum.",
+      EN: "Before sustainable brands became a trend in every supermarket, Heldenmarkt was already bringing together around 100 exhibitors of ethical fashion, mindful food, and clean tech under the concept of a 'temporary department store' — a fair designed to discover new brands before they go mainstream, with free tastings and talks on responsible consumption all weekend long.",
+      ES: "Antes de que las marcas sostenibles fueran tendencia en cualquier supermercado, Heldenmarkt ya reunía cerca de 100 expositores de moda ética, alimentación consciente y tecnología limpia bajo el concepto de 'gran almacén temporal' — una feria pensada para descubrir marcas nuevas antes de que se vuelvan masivas, con degustaciones gratuitas y charlas sobre consumo responsable durante todo el fin de semana.",
     },
     tags: {
       DE: ['nachhaltiger Markt Berlin', 'Berlin'],
-      EN: ['sustainability', 'Heldenmarkt ', 'History', 'exhibitors'],
-      ES: ['Festival', 'Heldenmarkt ', 'Historia', 'marcas sostenibles],
+      EN: ['sustainability', 'Heldenmarkt', 'History', 'exhibitors'],
+      ES: ['Festival', 'Heldenmarkt ', 'Historia', 'marcas sostenibles'],
     },
   },
-   {
+  {
     id: 13,
     slug: 'Ökowerk',
     image: '/assets/img/news/okowerk.jpg',
@@ -424,7 +424,7 @@ const newsSources: NewsSource[] = [
       ES: ['Festival', 'Grunewald,', 'Historia', 'Ökowerk'],
     },
   },
-   {
+  {
     id: 14,
     slug: 'BSR Second-Hand-Kaufhaus',
     image: '/assets/img/news/Secondhand.jpg',
