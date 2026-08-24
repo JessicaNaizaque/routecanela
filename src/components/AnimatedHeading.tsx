@@ -7,9 +7,11 @@ const CHAR_TRANSITION_MS = 500;
 type AnimatedHeadingProps = {
   text: string;
   className?: string;
+  // Optional per-line className overrides, e.g. to give each word its own font size.
+  lineClassNames?: string[];
 };
 
-export function AnimatedHeading({ text, className = '' }: AnimatedHeadingProps) {
+export function AnimatedHeading({ text, className = '', lineClassNames }: AnimatedHeadingProps) {
   const lines = useMemo(() => text.split('\n'), [text]);
   const [started, setStarted] = useState(false);
 
@@ -25,8 +27,9 @@ export function AnimatedHeading({ text, className = '' }: AnimatedHeadingProps) 
     <span className={`inline-block ${className}`}>
       {lines.map((line, lineIndex) => {
         const chars = [...line];
+        const lineClassName = lineClassNames?.[lineIndex] ?? '';
         return (
-          <span key={lineIndex} className="block">
+          <span key={lineIndex} className={`block ${lineClassName}`}>
             {chars.map((char, charIndex) => {
               const offset = charsBeforeLine(lineIndex);
               const stagger =
