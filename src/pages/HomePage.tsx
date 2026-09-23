@@ -108,11 +108,11 @@ export function HomePage() {
         <div className="absolute inset-0 px-6 lg:px-12 xl:px-16">
           <AnimatedHeading
             text={copy.hero_heading}
-            className="absolute top-1/2 -translate-y-1/2 left-[50%] text-left font-helvetica font-normal text-gray-300 tracking-[-0.04em]"
+            className="absolute top-1/2 -translate-y-1/2 left-[50%] text-left font-helvetica font-bold text-gray-300 tracking-[-0.04em]"
             lineClassNames={[
-              'text-6xl leading-[1.0] md:text-7xl md:leading-[1.0] lg:text-8xl lg:leading-[1.0] xl:text-9xl xl:leading-[1.0]',
-              'text-5xl leading-[1.0] md:text-6xl md:leading-[1.0] lg:text-7xl lg:leading-[1.0] xl:text-8xl xl:leading-[1.0]',
-              'text-4xl leading-[1.0] md:text-5xl md:leading-[1.0] lg:text-6xl lg:leading-[1.0] xl:text-7xl xl:leading-[1.0]',
+              'text-7xl leading-[0.9] md:text-8xl md:leading-[0.9] lg:text-9xl lg:leading-[0.9] xl:text-[10rem] xl:leading-[0.9]',
+              'text-6xl leading-[0.9] md:text-7xl md:leading-[0.9] lg:text-8xl lg:leading-[0.9] xl:text-9xl xl:leading-[0.9]',
+              'text-5xl leading-[0.9] md:text-6xl md:leading-[0.9] lg:text-7xl lg:leading-[0.9] xl:text-8xl xl:leading-[0.9]',
             ]}
           />
         </div>
