@@ -1,144 +1,231 @@
-import { Facebook, Instagram, MapPin, Youtube } from 'lucide-react';
+import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import { t } from '../translations';
+import { t, type Lang } from '../translations';
 
-const logoUrl = 'https://www.routecanela.de/assets/img/logo.png';
+const YEAR = String(new Date().getFullYear());
+
+const INSTAGRAM_URL =
+  'https://www.instagram.com/route_canela?igsh=N2Qyemtia25peGgy';
+
+const LANGS: Lang[] = ['ES', 'EN', 'DE'];
+
+const focusRing =
+  'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white';
+
+const navLinkClass = `text-[1.05rem] font-medium tracking-[-0.01em] text-white transition-opacity duration-150 hover:opacity-55 motion-reduce:transition-none ${focusRing}`;
+
+const appLinkClass = `border-b border-[#4a4a4a] pb-0.5 text-[0.95rem] font-medium text-white no-underline transition-colors duration-150 hover:border-white motion-reduce:transition-none ${focusRing}`;
+
+function NavGroup({
+  title,
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div>
+      <h4 className="mb-5 text-[0.72rem] font-medium text-[#9a9a9a]">{title}</h4>
+      {children}
+    </div>
+  );
+}
+
+function FooterAnchor({
+  href,
+  className,
+  children,
+}: {
+  href: string;
+  className: string;
+  children: ReactNode;
+}) {
+  const external = href.startsWith('http');
+  return (
+    <a
+      href={href}
+      className={className}
+      onClick={href === '#' ? (e) => e.preventDefault() : undefined}
+      {...(external ? { target: '_blank', rel: 'noreferrer' } : {})}
+    >
+      {children}
+    </a>
+  );
+}
 
 export function Footer() {
-  const { lang } = useLanguage();
+  const { lang, setLanguage } = useLanguage();
   const copy = t[lang];
 
   return (
-    <footer className="border-t border-amber-900/20 bg-stone-900 px-6 py-16 md:px-12 lg:px-16">
-      <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 lg:grid-cols-4">
-        <div>
-          <img src={logoUrl} alt="" className="mb-4 h-9 w-auto brightness-110" loading="lazy" />
-          <p className="text-sm text-stone-400">{copy.footer_tagline}</p>
-          <div className="mt-6 flex gap-3">
-            <a
-              href="https://www.instagram.com/route_canela?igsh=N2Qyemtia25peGgy"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg border border-stone-600 p-2 text-stone-400 transition-all duration-200 hover:border-amber-400/60 hover:bg-stone-800 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40"
-              aria-label="Instagram"
+    <footer className="bg-[#333333] font-helvetica text-white">
+      <div className="mx-auto max-w-[1280px] px-8">
+        <div className="border-b border-[#4a4a4a] pb-14 pt-[110px] max-[480px]:pb-[60px] max-[480px]:pt-20">
+          <p className="mb-12 max-w-[16ch] text-[clamp(2.6rem,7vw,6.2rem)] font-semibold leading-[1.02] tracking-[-0.03em]">
+            {copy.footer_statement}
+          </p>
+
+          <div className="max-w-[340px]">
+            <h4 className="mb-5 text-[0.72rem] font-medium text-[#9a9a9a]">
+              {copy.footer_subscribe}
+            </h4>
+            <form
+              className="flex w-[280px] items-end gap-5 border-b-[1.5px] border-white pb-3 max-[860px]:w-full"
+              onSubmit={(e) => e.preventDefault()}
             >
-              <Instagram className="h-4 w-4" />
-            </a>
-            <a
-              href="https://www.facebook.com/routecanela?mibextid=LQQJ4d"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg border border-stone-600 p-2 text-stone-400 transition-all duration-200 hover:border-amber-400/60 hover:bg-stone-800 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40"
-              aria-label="Facebook"
-            >
-              <Facebook className="h-4 w-4" />
-            </a>
-            <a
-              href="https://www.youtube.com/@Routecanela"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg border border-stone-600 p-2 text-stone-400 transition-all duration-200 hover:border-amber-400/60 hover:bg-stone-800 hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40"
-              aria-label="Youtube"
-            >
-              <Youtube className="h-4 w-4" />
-            </a>
+              <input
+                type="email"
+                placeholder={copy.footer_subscribe_placeholder}
+                aria-label={copy.footer_email_aria}
+                className="min-w-0 flex-1 bg-transparent py-1 font-helvetica text-[1.05rem] text-white placeholder:text-[#9a9a9a] focus:outline-none"
+              />
+              <button
+                type="submit"
+                aria-label={copy.footer_subscribe_aria}
+                className={`cursor-pointer border-0 bg-transparent p-0 text-[1.4rem] leading-none text-white ${focusRing}`}
+              >
+                →
+              </button>
+            </form>
           </div>
         </div>
 
-        <div>
-          <h3 className="text-sm font-semibold uppercase tracking-widest text-amber-400/95">
-            {copy.footer_subscribe}
-          </h3>
-          <p className="mt-3 text-sm text-stone-400">{copy.subscribe_desc}</p>
-          <form
-            className="mt-4 flex flex-col gap-3 sm:flex-row"
-            onSubmit={(e) => e.preventDefault()}
+        <div className="flex flex-wrap justify-between gap-12 border-b border-[#4a4a4a] py-16 max-[860px]:flex-col max-[860px]:gap-10">
+          <NavGroup title={copy.footer_about_title}>
+            <ul className="m-0 list-none p-0">
+              <li className="mb-3.5">
+                <Link to="/" className={navLinkClass}>
+                  {copy.footer_about_us}
+                </Link>
+              </li>
+              <li className="mb-3.5">
+                <FooterAnchor href="#" className={navLinkClass}>
+                  {copy.footer_team}
+                </FooterAnchor>
+              </li>
+              <li className="mb-3.5">
+                <Link to="/impressum" className={navLinkClass}>
+                  {copy.footer_impressum}
+                </Link>
+              </li>
+            </ul>
+          </NavGroup>
+
+          <NavGroup title={copy.footer_explore_title}>
+            <ul className="m-0 list-none p-0">
+              <li className="mb-3.5">
+                <Link to="/routes" className={navLinkClass}>
+                  {copy.nav_routes}
+                </Link>
+              </li>
+              <li className="mb-3.5">
+                <Link to="/news" className={navLinkClass}>
+                  {copy.footer_stories}
+                </Link>
+              </li>
+              <li className="mb-3.5">
+                <FooterAnchor href="#" className={navLinkClass}>
+                  {copy.footer_ar}
+                </FooterAnchor>
+              </li>
+            </ul>
+          </NavGroup>
+
+          <NavGroup title={copy.footer_business_title}>
+            <ul className="m-0 list-none p-0">
+              <li className="mb-3.5">
+                <FooterAnchor href="#" className={navLinkClass}>
+                  {copy.footer_partner}
+                </FooterAnchor>
+              </li>
+              <li className="mb-3.5">
+                <FooterAnchor href="#" className={navLinkClass}>
+                  {copy.footer_guides}
+                </FooterAnchor>
+              </li>
+              <li className="mb-3.5">
+                <a href={`mailto:${copy.contact_email}`} className={navLinkClass}>
+                  {copy.footer_business_contact}
+                </a>
+              </li>
+            </ul>
+          </NavGroup>
+
+          <NavGroup title={copy.footer_follow}>
+            <ul className="m-0 list-none p-0">
+              <li className="mb-3.5">
+                <FooterAnchor href={INSTAGRAM_URL} className={navLinkClass}>
+                  Instagram
+                </FooterAnchor>
+              </li>
+              <li className="mb-3.5">
+                <FooterAnchor href="#" className={navLinkClass}>
+                  TikTok
+                </FooterAnchor>
+              </li>
+              <li className="mb-3.5">
+                <FooterAnchor href="#" className={navLinkClass}>
+                  LinkedIn
+                </FooterAnchor>
+              </li>
+              <li className="mb-3.5">
+                <FooterAnchor href="#" className={navLinkClass}>
+                  Xing
+                </FooterAnchor>
+              </li>
+            </ul>
+          </NavGroup>
+
+          <NavGroup title={copy.footer_app_title}>
+            <div className="mt-7 flex gap-6">
+              <FooterAnchor href="#" className={appLinkClass}>
+                Google Play
+              </FooterAnchor>
+              <FooterAnchor href="#" className={appLinkClass}>
+                App Store
+              </FooterAnchor>
+            </div>
+          </NavGroup>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-between gap-4 py-[26px] pb-8 text-[0.82rem] text-[#9a9a9a] max-[480px]:flex-col max-[480px]:items-start">
+          <div className="flex flex-wrap gap-6">
+            <Link
+              to="/impressum"
+              className={`text-[#9a9a9a] no-underline hover:text-white ${focusRing}`}
+            >
+              {copy.footer_legal_notice}
+            </Link>
+            <FooterAnchor
+              href="#"
+              className={`text-[#9a9a9a] no-underline hover:text-white ${focusRing}`}
+            >
+              {copy.footer_privacy}
+            </FooterAnchor>
+            <span>{copy.copyright.replace('{year}', YEAR)}</span>
+          </div>
+          <div
+            className="flex gap-[18px]"
+            role="group"
+            aria-label={copy.footer_lang_label}
           >
-            <input
-              type="email"
-              placeholder={copy.footer_subscribe_placeholder}
-              className="w-full rounded-lg border border-stone-600 bg-stone-800/80 px-4 py-2 text-sm text-stone-100 outline-none placeholder:text-stone-500 focus-visible:border-amber-400/50 focus-visible:ring-2 focus-visible:ring-amber-400/30"
-            />
-            <button
-              type="submit"
-              className="btn-gold shrink-0 px-4 py-2 text-sm ring-offset-stone-900"
-            >
-              {copy.footer_subscribe}
-            </button>
-          </form>
-        </div>
-
-        <div>
-          <h3 className="text-sm font-semibold uppercase tracking-widest text-amber-400/95">
-            {copy.footer_links}
-          </h3>
-          <ul className="mt-4 flex flex-col gap-2 text-sm text-stone-400">
-            <li>
-              <Link
-                to="/"
-                className="transition-colors hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40 rounded-sm"
+            {LANGS.map((code) => (
+              <button
+                key={code}
+                type="button"
+                onClick={() => setLanguage(code)}
+                aria-pressed={lang === code}
+                className={`cursor-pointer border-0 bg-transparent p-0 font-helvetica text-[0.82rem] font-medium ${focusRing} ${
+                  lang === code ? 'text-white' : 'text-[#9a9a9a]'
+                }`}
               >
-                {copy.nav_home}
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/routes"
-                className="transition-colors hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40 rounded-sm"
-              >
-                {copy.nav_routes}
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/events"
-                className="transition-colors hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40 rounded-sm"
-              >
-                {copy.nav_events}
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/news"
-                className="transition-colors hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40 rounded-sm"
-              >
-                {copy.nav_news}
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/impressum"
-                className="transition-colors hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40 rounded-sm"
-              >
-                {copy.footer_impressum}
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="text-sm font-semibold uppercase tracking-widest text-amber-400/95">
-            {copy.footer_contact}
-          </h3>
-          <p className="mt-4 text-sm text-stone-300">
-            <a
-              href={`mailto:${copy.contact_email}`}
-              className="transition-colors hover:text-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/40 rounded-sm"
-            >
-              {copy.contact_email}
-            </a>
-          </p>
-          <p className="mt-3 flex items-center gap-2 text-sm text-stone-400">
-            <MapPin className="h-4 w-4 shrink-0 text-amber-400/70" aria-hidden />
-            {copy.contact_location}
-          </p>
+                {code}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
-
-      <p className="mx-auto mt-12 max-w-7xl pt-8 text-center text-xs text-stone-600">
-        {copy.copyright}
-      </p>
     </footer>
   );
 }

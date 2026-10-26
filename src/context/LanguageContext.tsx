@@ -2,6 +2,7 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useState,
   type ReactNode,
@@ -21,6 +22,10 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const setLanguage = useCallback((next: Lang) => {
     setLang(next);
   }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = lang.toLowerCase();
+  }, [lang]);
 
   const value = useMemo(
     () => ({ lang, setLanguage }),
